@@ -19,9 +19,9 @@
         "m01_couplers": {}
       },
       "rst_ps7_0_50M": "",
-      "kybd_slv_0": "",
       "clk_wiz_0": "",
-      "slv_0": ""
+      "slv_0": "",
+      "kybd_slv_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1501,10 +1501,6 @@
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "design_1_rst_ps7_0_50M_0"
       },
-      "kybd_slv_0": {
-        "vlnv": "clarkson.edu:user:kybd_slv:1.0",
-        "xci_name": "design_1_kybd_slv_0_1"
-      },
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "xci_name": "design_1_clk_wiz_0_0",
@@ -1559,6 +1555,10 @@
       "slv_0": {
         "vlnv": "clarkson.edu:user:slv:1.0",
         "xci_name": "design_1_slv_0_0"
+      },
+      "kybd_slv_0": {
+        "vlnv": "clarkson.edu:user:kybd_slv:1.0",
+        "xci_name": "design_1_kybd_slv_0_1"
       }
     },
     "interface_nets": {
@@ -1603,8 +1603,8 @@
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
-          "kybd_slv_0/s00_axi_aclk",
-          "slv_0/s00_axi_aclk"
+          "slv_0/s00_axi_aclk",
+          "kybd_slv_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1620,8 +1620,8 @@
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/M01_ARESETN",
-          "kybd_slv_0/s00_axi_aresetn",
-          "slv_0/s00_axi_aresetn"
+          "slv_0/s00_axi_aresetn",
+          "kybd_slv_0/s00_axi_aresetn"
         ]
       },
       "slv_0_hsync": {

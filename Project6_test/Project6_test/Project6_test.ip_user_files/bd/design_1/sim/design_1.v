@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Wed Apr 21 11:43:58 2021
+//Date        : Wed Apr 21 12:00:11 2021
 //Host        : C195-UL-41 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -32,6 +32,8 @@ module design_1
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    PS2_CLK,
+    PS2_DATA,
     hsync,
     reset_rtl,
     sys_clock,
@@ -60,6 +62,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  input PS2_CLK;
+  input PS2_DATA;
   output hsync;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 125000000, INSERT_VIP 0, PHASE 0.000" *) input sys_clock;
@@ -68,6 +72,8 @@ module design_1
   output [3:0]vga_r;
   output vsync;
 
+  wire PS2_CLK_1;
+  wire PS2_DATA_1;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
   wire [14:0]processing_system7_0_DDR_ADDR;
@@ -178,6 +184,8 @@ module design_1
   wire slv_0_vsync;
   wire sys_clock_1;
 
+  assign PS2_CLK_1 = PS2_CLK;
+  assign PS2_DATA_1 = PS2_DATA;
   assign hsync = slv_0_hsync;
   assign reset_rtl_1 = reset_rtl;
   assign sys_clock_1 = sys_clock;
@@ -191,8 +199,8 @@ module design_1
         .clk_out2(clk_wiz_0_clk_out2),
         .reset(reset_rtl_1));
   design_1_kybd_slv_0_1 kybd_slv_0
-       (.PS2_CLK(1'b0),
-        .PS2_DATA(1'b0),
+       (.PS2_CLK(PS2_CLK_1),
+        .PS2_DATA(PS2_DATA_1),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
