@@ -1,0 +1,50 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 21 11:43:54 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_slv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_slv_0_0 (clarkson.edu:user:slv:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Apr 20 09:35:14 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_kybd_slv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_kybd_slv_0_1 (clarkson.edu:user:kybd_slv:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_kybd_slv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'PS2_CLK'
+
+-Upgrade has added port 'PS2_DATA'
+
+
