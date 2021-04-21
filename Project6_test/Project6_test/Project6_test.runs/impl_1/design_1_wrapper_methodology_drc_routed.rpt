@@ -1,0 +1,551 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 21 12:13:25 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 102
++-----------+------------------+------------------------------------------------+------------+
+| Rule      | Severity         | Description                                    | Violations |
++-----------+------------------+------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 3          |
+| TIMING-7  | Critical Warning | No common node between related clocks          | 3          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                    | 11         |
+| DPIR-1    | Warning          | Asynchronous driver check                      | 17         |
+| LUTAR-1   | Warning          | LUT drives async reset alert                   | 1          |
+| TIMING-16 | Warning          | Large setup violation                          | 53         |
+| TIMING-18 | Warning          | Missing input or output delay                  | 14         |
++-----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and clk_out2_design_1_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out2_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and clk_out2_design_1_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out2_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/KEYBOARD/ps2_word_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr input pin design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr1_carry__0_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ASCII_INST/FSM_sequential_state_reg[0]/CLR, design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ASCII_INST/FSM_sequential_state_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.994 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[14]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.006 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[8]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.019 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[15]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.027 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[0]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.028 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[7]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.034 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[12]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.059 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[15]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.161 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[24]/C (clocked by clk_fpga_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.163 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[13]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -2.163 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -2.163 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[6]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -2.167 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -2.168 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[1]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -2.175 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -2.180 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[10]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -2.185 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -2.188 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -2.194 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[11]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -2.197 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[14]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -2.197 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[11]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -2.199 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[7]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -2.227 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[12]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -2.271 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/previous_bram_addr_reg[9]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -2.294 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[6]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -2.295 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[8]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -2.296 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[13]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -2.300 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -2.313 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[18]/C (clocked by clk_fpga_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -2.324 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -2.334 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[10]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -2.336 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[11]/C (clocked by clk_fpga_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -2.346 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[9]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -2.358 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[1]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -2.361 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[25]/C (clocked by clk_fpga_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -2.369 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -2.472 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[0]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -2.625 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[11]/C (clocked by clk_fpga_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[12]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[13]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[6]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[7]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -3.978 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[8]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[10]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[11]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[14]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[15]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -4.014 ns between design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg[8]/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[9]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on PS2_CLK relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on PS2_DATA relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[0] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[1] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[2] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[3] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[0] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[1] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[2] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[3] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[0] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[1] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[2] relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[3] relative to clock(s) sys_clock
+Related violations: <none>
+
+
