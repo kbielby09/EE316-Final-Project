@@ -120,7 +120,7 @@ bool newCode(int scancode) {
 }
 
 unsigned char translate(int scancode){
-	printf("CAPS: %d\n", caps);
+
 
 	breakFlag = false;
 	e0Code = false;
@@ -128,7 +128,7 @@ unsigned char translate(int scancode){
 	switch(scancode) {
 		//caps mode
 		case 0x58 :
-			if(breakFlag == false) {
+			if(breakFlag == true) {
 				caps = ! caps;
 			}
 			break;

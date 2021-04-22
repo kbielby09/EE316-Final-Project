@@ -59,12 +59,7 @@
 #include <stdbool.h>
 
 unsigned char ascii;
-bool  breakFlag, prevScanFlag, newScanFlag, e0Code, asciiNew;
-bool ctrlLeft = false;
-	bool ctrlRight = false;
-	bool shiftRight = false;
-	bool shiftLeft = false;
-	bool caps = true;
+bool breakFlag, prevScanFlag, newScanFlag, e0Code, asciiNew;
 
 void ready(int scancode);
 bool newCode(int scancode);
@@ -120,7 +115,11 @@ bool newCode(int scancode) {
 }
 
 unsigned char translate(int scancode){
-	printf("CAPS: %d\n", caps);
+	bool ctrlLeft = false;
+	bool ctrlRight = false;
+	bool shiftRight = false;
+	bool shiftLeft = false;
+	bool caps = false;
 
 	breakFlag = false;
 	e0Code = false;
@@ -128,7 +127,8 @@ unsigned char translate(int scancode){
 	switch(scancode) {
 		//caps mode
 		case 0x58 :
-			if(breakFlag == false) {
+			//if(breakFlag == false) {
+			if(breakFlag == true) {
 				caps = ! caps;
 			}
 			break;
@@ -719,6 +719,5 @@ unsigned char translate(int scancode){
 		}
 	}
 	printf("Ascii: %c\n", ascii);
-	printf("Ascii Hex: %x\n", ascii);
 	return ascii;
 }

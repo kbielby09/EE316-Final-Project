@@ -1,856 +1,9 @@
-10:16:10 **** Incremental Build of configuration Debug for project vga_test2 ****
+16:32:59 **** Incremental Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-10:16:12 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-10:16:28 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  56620	   2584	  23328	  82532	  14264	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-10:18:02 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:64:2: error: too few arguments to function 'SLV_Reg_SelfTest'
-  SLV_Reg_SelfTest();
-  ^~~~~~~~~~~~~~~~
-In file included from ../src/helloworld.c:52:
-../../vga_test2_bsp/ps7_cortexa9_0/include/slv.h:77:9: note: declared here
- XStatus SLV_Reg_SelfTest(void * baseaddr_p);
-         ^~~~~~~~~~~~~~~~
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-10:18:08 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  56620	   2584	  23328	  82532	  14264	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-10:18:12 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-10:18:37 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:10:22 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'ready':
-../src/helloworld.c:64:6: warning: type of 'scancode' defaults to 'int' [-Wimplicit-int]
- void ready(scancode) {
-      ^~~~~
-../src/helloworld.c:67:3: warning: implicit declaration of function 'newCode' [-Wimplicit-function-declaration]
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:74:6: error: conflicting types for 'newCode'
- bool newCode(scancode) {
-      ^~~~~~~
-../src/helloworld.c:67:3: note: previous implicit declaration of 'newCode' was here
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:74:6: warning: type of 'scancode' defaults to 'int' [-Wimplicit-int]
- bool newCode(scancode) {
-      ^~~~~~~
-../src/helloworld.c:76:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c:84:3: warning: implicit declaration of function 'translate' [-Wimplicit-function-declaration]
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:89:15: error: conflicting types for 'translate'
- unsigned char translate(scancode){
-               ^~~~~~~~~
-../src/helloworld.c:84:3: note: previous implicit declaration of 'translate' was here
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:89:15: warning: type of 'scancode' defaults to 'int' [-Wimplicit-int]
- unsigned char translate(scancode){
-               ^~~~~~~~~
-../src/helloworld.c:98:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:99:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:99:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:105:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:106:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:106:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:110:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:110:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:115:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:115:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:119:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:119:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:688:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-  if(breakFlag = false) {
-     ^~~~~~~~~
-../src/helloworld.c:689:8: error: array size missing in 'binAscii'
-   char binAscii[];
-        ^~~~~~~~
-../src/helloworld.c:692:11: error: subscripted value is neither array nor pointer nor vector
-   if(ascii[7] == 0) {
-           ^
-../src/helloworld.c:689:8: warning: unused variable 'binAscii' [-Wunused-variable]
-   char binAscii[];
-        ^~~~~~~~
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:11:03 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'ready':
-../src/helloworld.c:64:6: warning: type of 'scancode' defaults to 'int' [-Wimplicit-int]
- void ready(scancode) {
-      ^~~~~
-../src/helloworld.c:67:3: warning: implicit declaration of function 'newCode' [-Wimplicit-function-declaration]
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:74:6: error: conflicting types for 'newCode'
- bool newCode(unsigned char scancode) {
-      ^~~~~~~
-../src/helloworld.c:67:3: note: previous implicit declaration of 'newCode' was here
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:76:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c:84:3: warning: implicit declaration of function 'translate' [-Wimplicit-function-declaration]
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:89:15: error: conflicting types for 'translate'
- unsigned char translate(unsigned char scancode){
-               ^~~~~~~~~
-../src/helloworld.c:84:3: note: previous implicit declaration of 'translate' was here
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:98:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:99:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:99:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:105:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:106:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:106:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:110:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:110:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:115:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:115:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:119:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:119:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:688:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-  if(breakFlag = false) {
-     ^~~~~~~~~
-../src/helloworld.c:689:8: error: array size missing in 'binAscii'
-   char binAscii[];
-        ^~~~~~~~
-../src/helloworld.c:692:11: error: subscripted value is neither array nor pointer nor vector
-   if(ascii[7] == 0) {
-           ^
-../src/helloworld.c:689:8: warning: unused variable 'binAscii' [-Wunused-variable]
-   char binAscii[];
-        ^~~~~~~~
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:11:25 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'ready':
-../src/helloworld.c:67:3: warning: implicit declaration of function 'newCode' [-Wimplicit-function-declaration]
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:74:6: error: conflicting types for 'newCode'
- bool newCode(unsigned char scancode) {
-      ^~~~~~~
-../src/helloworld.c:67:3: note: previous implicit declaration of 'newCode' was here
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:76:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c:84:3: warning: implicit declaration of function 'translate' [-Wimplicit-function-declaration]
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:89:15: error: conflicting types for 'translate'
- unsigned char translate(unsigned char scancode){
-               ^~~~~~~~~
-../src/helloworld.c:84:3: note: previous implicit declaration of 'translate' was here
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:98:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:99:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:99:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:105:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:106:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:106:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:110:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:110:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:115:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:115:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:119:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:119:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:688:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-  if(breakFlag = false) {
-     ^~~~~~~~~
-../src/helloworld.c:689:8: error: array size missing in 'binAscii'
-   char binAscii[];
-        ^~~~~~~~
-../src/helloworld.c:692:11: error: subscripted value is neither array nor pointer nor vector
-   if(ascii[7] == 0) {
-           ^
-../src/helloworld.c:689:8: warning: unused variable 'binAscii' [-Wunused-variable]
-   char binAscii[];
-        ^~~~~~~~
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:12:55 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'ready':
-../src/helloworld.c:67:3: warning: implicit declaration of function 'newCode' [-Wimplicit-function-declaration]
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:74:6: error: conflicting types for 'newCode'
- bool newCode(unsigned char scancode) {
-      ^~~~~~~
-../src/helloworld.c:67:3: note: previous implicit declaration of 'newCode' was here
-   newCode(scancode);
-   ^~~~~~~
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:76:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c:84:3: warning: implicit declaration of function 'translate' [-Wimplicit-function-declaration]
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:89:15: error: conflicting types for 'translate'
- unsigned char translate(unsigned char scancode){
-               ^~~~~~~~~
-../src/helloworld.c:84:3: note: previous implicit declaration of 'translate' was here
-   translate(scancode);
-   ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:98:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:99:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:99:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:105:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:106:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:106:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:110:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:110:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:115:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:115:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:119:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:119:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:15:37 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:103:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:125:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:126:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:126:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:132:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:133:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:133:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:137:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:137:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:142:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:142:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:146:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:146:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:151:4: warning: 'ctrlLeft' is used uninitialized in this function [-Wuninitialized]
-  if(ctrlLeft == true || ctrlRight == true) {
-    ^
-../src/helloworld.c:318:56: warning: 'caps' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  if((shiftRight == false && shiftLeft == false && caps == false) ||
-                                                        ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61548	   2584	  23328	  87460	  155a4	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:17:29 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:103:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:129:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(breakFlag = false) {
-       ^~~~~~~~~
-../src/helloworld.c:130:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:130:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:136:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-    if(e0Code = true) {
-       ^~~~~~
-../src/helloworld.c:137:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:137:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:141:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:141:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:146:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:146:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:150:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:150:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61612	   2584	  23328	  87524	  155e4	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:18:13 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:103:8: warning: unused variable 'breakFlag' [-Wunused-variable]
-   bool breakFlag = true;
-        ^~~~~~~~~
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:130:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:130:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:137:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:137:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:141:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:141:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:146:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:146:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:150:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:150:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61676	   2584	  23328	  87588	  15624	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:04 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:131:12: warning: '~' on a boolean expression [-Wbool-operation]
-     caps = ~ caps;
-            ^
-../src/helloworld.c:131:12: note: did you mean to use logical not?
-     caps = ~ caps;
-            ^
-            !
-../src/helloworld.c:138:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:138:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:142:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:142:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:147:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:147:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:151:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:151:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61676	   2584	  23328	  87588	  15624	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:22 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:138:17: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:138:17: note: did you mean to use logical not?
-     ctrlRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c:142:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:142:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:147:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:147:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:151:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:151:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61676	   2584	  23328	  87588	  15624	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:28 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:142:16: warning: '~' on a boolean expression [-Wbool-operation]
-     ctrlLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:142:16: note: did you mean to use logical not?
-     ctrlLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:147:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:147:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:151:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:151:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61740	   2584	  23328	  87652	  15664	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:34 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:147:16: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftLeft = ~ breakFlag;
-                ^
-../src/helloworld.c:147:16: note: did you mean to use logical not?
-    shiftLeft = ~ breakFlag;
-                ^
-                !
-../src/helloworld.c:151:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:151:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61740	   2584	  23328	  87652	  15664	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:39 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:151:17: warning: '~' on a boolean expression [-Wbool-operation]
-    shiftRight = ~ breakFlag;
-                 ^
-../src/helloworld.c:151:17: note: did you mean to use logical not?
-    shiftRight = ~ breakFlag;
-                 ^
-                 !
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61740	   2584	  23328	  87652	  15664	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:23:44 **** Auto Build of configuration Debug for project vga_test2 ****
+16:33:42 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -871,10 +24,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  61804	   2584	  23328	  87716	  156a4	vga_test2.elf
+  61844	   2584	  23328	  87756	  156cc	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
-15:30:56 **** Auto Build of configuration Debug for project vga_test2 ****
+16:35:46 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -882,46 +35,143 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61804	   2584	  23328	  87716	  156a4	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:32:13 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:108:3: error: 'breakFlag' undeclared (first use in this function); did you mean 'prevScanFlag'?
+   breakFlag = true;
+   ^~~~~~~~~
+   prevScanFlag
+../src/helloworld.c:108:3: note: each undeclared identifier is reported only once for each function it appears in
 ../src/helloworld.c: In function 'translate':
-../src/helloworld.c:720:28: error: expected ';' before 'return'
-  printf("%c Ascii:", ascii)
-                            ^
-                            ;
-  return ascii;
-  ~~~~~~                     
+../src/helloworld.c:125:2: error: 'breakFlag' undeclared (first use in this function); did you mean 'prevScanFlag'?
+  breakFlag = false;
+  ^~~~~~~~~
+  prevScanFlag
 ../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:722:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:32:24 **** Auto Build of configuration Debug for project vga_test2 ****
+16:36:37 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'newCode':
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61908	   2584	  23328	  87820	  1570c	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+16:36:44 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:37:56 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'newCode':
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61964	   2584	  23328	  87876	  15744	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+16:37:58 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:38:40 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:39:45 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'newCode':
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61900	   2584	  23328	  87812	  15704	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+16:39:49 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:40:05 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'newCode':
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61964	   2584	  23328	  87876	  15744	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+16:40:06 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:42:46 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -929,30 +179,14 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'translate':
-../src/helloworld.c:720:28: error: expected ';' before 'return'
-  printf("Ascii: %c", ascii)
-                            ^
-                            ;
-  return ascii;
-  ~~~~~~                     
+../src/helloworld.c:123:17: warning: unknown conversion type character 'b' in format [-Wformat=]
+  printf("CAPS: %b\n", caps);
+                 ^
+../src/helloworld.c:123:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("CAPS: %b\n", caps);
+         ^~~~~~~~~~~~
 ../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../src/helloworld.c: In function 'translate':
-../src/helloworld.c:722:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-15:32:30 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 'Finished building: ../src/helloworld.c'
@@ -965,10 +199,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  61820	   2584	  23328	  87732	  156b4	vga_test2.elf
+  61972	   2584	  23328	  87884	  1574c	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
-15:36:16 **** Auto Build of configuration Debug for project vga_test2 ****
+16:43:04 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -976,7 +210,7 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 'Finished building: ../src/helloworld.c'
@@ -989,25 +223,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  61820	   2584	  23328	  87732	  156b4	vga_test2.elf
+  61972	   2584	  23328	  87884	  1574c	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
-15:36:44 **** Incremental Build of configuration Debug for project vga_test2 ****
+16:43:07 **** Incremental Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-15:37:11 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:38:08 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:39:03 **** Auto Build of configuration Debug for project vga_test2 ****
+17:15:10 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -1015,7 +239,7 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/helloworld.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 'Finished building: ../src/helloworld.c'
@@ -1028,104 +252,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  61820	   2584	  23328	  87732	  156b4	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:39:40 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:41:54 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:43:05 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:45:24 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:47:51 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61820	   2584	  23328	  87732	  156b4	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:48:57 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:58:11 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61756	   2584	  23328	  87668	  15674	vga_test2.elf
-'Finished building: vga_test2.elf.size'
-' '
-15:58:41 **** Incremental Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-16:01:17 **** Auto Build of configuration Debug for project vga_test2 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'newCode':
-../src/helloworld.c:113:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: vga_test2.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: vga_test2.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61820	   2584	  23328	  87732	  156b4	vga_test2.elf
+  61972	   2584	  23328	  87884	  1574c	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
