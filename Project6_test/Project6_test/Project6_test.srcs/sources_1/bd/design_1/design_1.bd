@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x261C261ADA755EB4",
+      "boundary_crc": "0x5C31EE39B50E979",
       "device": "xc7z010clg400-1",
       "name": "design_1",
       "synth_flow_mode": "None",
@@ -150,6 +150,9 @@
       },
       "PS2_DATA": {
         "direction": "I"
+      },
+      "ps2": {
+        "direction": "O"
       }
     },
     "components": {
@@ -341,6 +344,9 @@
             "value": "0"
           },
           "PCW_I2C_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_IRQ_F2P_INTR": {
             "value": "1"
           },
           "PCW_IRQ_F2P_MODE": {
@@ -1129,6 +1135,9 @@
           "PCW_USE_CROSS_TRIGGER": {
             "value": "0"
           },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
+          },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
           }
@@ -1295,16 +1304,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -1439,10 +1448,10 @@
               "s00_couplers/S_AXI"
             ]
           },
-          "s00_couplers_to_xbar": {
+          "xbar_to_m00_couplers": {
             "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           },
           "m00_couplers_to_ps7_0_axi_periph": {
@@ -1451,16 +1460,16 @@
               "m00_couplers/M_AXI"
             ]
           },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
           "m01_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
               "M01_AXI",
               "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -1558,7 +1567,7 @@
       },
       "kybd_slv_0": {
         "vlnv": "clarkson.edu:user:kybd_slv:1.0",
-        "xci_name": "design_1_kybd_slv_0_1"
+        "xci_name": "design_1_kybd_slv_0_2"
       }
     },
     "interface_nets": {
@@ -1574,12 +1583,6 @@
           "ps7_0_axi_periph/S00_AXI"
         ]
       },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "kybd_slv_0/S00_AXI"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -1590,6 +1593,12 @@
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
+          "kybd_slv_0/S00_AXI"
         ]
       }
     },
@@ -1675,7 +1684,8 @@
       "clk_wiz_0_clk_out2": {
         "ports": [
           "clk_wiz_0/clk_out2",
-          "slv_0/I_CLK_50MHZ"
+          "slv_0/I_CLK_50MHZ",
+          "kybd_slv_0/I_CLK_50MHZ"
         ]
       },
       "PS2_CLK_1": {
@@ -1688,6 +1698,18 @@
         "ports": [
           "PS2_DATA",
           "kybd_slv_0/PS2_DATA"
+        ]
+      },
+      "kybd_slv_0_IRQ_I": {
+        "ports": [
+          "kybd_slv_0/IRQ_I",
+          "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "kybd_slv_0_PS2_new_sig": {
+        "ports": [
+          "kybd_slv_0/PS2_new_sig",
+          "ps2"
         ]
       }
     },

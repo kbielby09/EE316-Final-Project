@@ -46,12 +46,33 @@
  */
 
 #include <stdio.h>
+
+// Header files for IP cores
+#include "kybd_slv.h"
+#include "slv.h"
+
 #include "platform.h"
 #include "xil_printf.h"
+#include "xil_types.h"
+#include "xparameters.h"
+#include "xil_io.h"
 
 
 int main()
 {
+	int var;
+//	SLV_Reg_SelfTest();
+
+	while(1){
+		// read data from the keyboard
+		var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
+		if(var != 0){
+			printf("var: %x \n", var);
+		}
+
+		// write data to the display
+		SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, var);
+	}
    printf("Hola Mundo\n");
     return 0;
 }

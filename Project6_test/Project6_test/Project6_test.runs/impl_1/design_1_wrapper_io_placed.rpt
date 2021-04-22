@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date                      : Wed Apr 21 12:12:45 2021
+| Date                      : Wed Apr 21 15:02:44 2021
 | Host                      : C195-UL-41 running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           148 |
+|           149 |
 +---------------+
 
 
@@ -348,7 +348,7 @@ Table of Contents
 | T11        | vga_g[1]          | High Range | IO_L1P_T0_34            | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T12        |                   | High Range | IO_L2P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T13        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| T14        |                   | High Range | IO_L5P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T14        | ps2               | High Range | IO_L5P_T0_34            | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T15        |                   | High Range | IO_L5N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T16        |                   | High Range | IO_L9P_T1_DQS_34        | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T17        |                   | High Range | IO_L20P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

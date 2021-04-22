@@ -17,10 +17,10 @@
   "C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/d6e9/src/debounce.vhd" \
-  "../../../bd/design_1/ipshared/d6e9/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
-  "../../../bd/design_1/ipshared/d6e9/src/ps2_keyboard.vhd" \
-  "../../../bd/design_1/ipshared/d6e9/hdl/kybd_slv_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/13b8/src/debounce.vhd" \
+  "../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
+  "../../../bd/design_1/ipshared/13b8/src/ps2_keyboard.vhd" \
+  "../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_kybd_slv_0_1/sim/design_1_kybd_slv_0_1.vhd" \
 -endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \

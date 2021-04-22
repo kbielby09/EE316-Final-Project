@@ -165,6 +165,7 @@ proc create_root_design { parentCell } {
   set PS2_CLK [ create_bd_port -dir I PS2_CLK ]
   set PS2_DATA [ create_bd_port -dir I PS2_DATA ]
   set hsync [ create_bd_port -dir O hsync ]
+  set ps2 [ create_bd_port -dir O ps2 ]
   set reset_rtl [ create_bd_port -dir I -type rst reset_rtl ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
@@ -307,6 +308,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_I2C_RESET_ENABLE {1} \
    CONFIG.PCW_IOPLL_CTRL_FBDIV {20} \
    CONFIG.PCW_IO_IO_PLL_FREQMHZ {1000.000} \
+   CONFIG.PCW_IRQ_F2P_INTR {1} \
    CONFIG.PCW_IRQ_F2P_MODE {DIRECT} \
    CONFIG.PCW_MIO_0_DIRECTION {inout} \
    CONFIG.PCW_MIO_0_IOTYPE {LVCMOS 3.3V} \
@@ -659,6 +661,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_USB_RESET_SELECT {Share reset pin} \
    CONFIG.PCW_USE_AXI_NONSECURE {0} \
    CONFIG.PCW_USE_CROSS_TRIGGER {0} \
+   CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
    CONFIG.PCW_USE_M_AXI_GP0 {1} \
  ] $processing_system7_0
 
@@ -685,7 +688,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net PS2_CLK_1 [get_bd_ports PS2_CLK] [get_bd_pins kybd_slv_0/PS2_CLK]
   connect_bd_net -net PS2_DATA_1 [get_bd_ports PS2_DATA] [get_bd_pins kybd_slv_0/PS2_DATA]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins slv_0/I_CLK_125MHZ]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins slv_0/I_CLK_50MHZ]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins kybd_slv_0/I_CLK_50MHZ] [get_bd_pins slv_0/I_CLK_50MHZ]
+  connect_bd_net -net kybd_slv_0_IRQ_I [get_bd_pins kybd_slv_0/IRQ_I] [get_bd_pins processing_system7_0/IRQ_F2P]
+  connect_bd_net -net kybd_slv_0_PS2_new_sig [get_bd_ports ps2] [get_bd_pins kybd_slv_0/PS2_new_sig]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins kybd_slv_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk] [get_bd_pins slv_0/s00_axi_aclk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
