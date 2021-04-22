@@ -10,22 +10,24 @@
 
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Project6_test/Project6_test/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.cache/ip 
 Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21716 
+INFO: Helper process launched with PID 8496 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 882.680 ; gain = 178.047
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 730.008 ; gain = 178.262
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -85,45 +87,45 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
-INFO: [Synth 8-638] synthesizing module 'design_1_kybd_slv_0_2' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:87]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'design_1_kybd_slv_0_2' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:87]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'kybd_slv_v1_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:5' bound to instance 'U0' of component 'kybd_slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:156]
-INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:53]
+INFO: [Synth 8-3491] module 'kybd_slv_v1_0' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:5' bound to instance 'U0' of component 'kybd_slv_v1_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:53]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'kybd_slv_v1_0_S00_AXI' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:5' bound to instance 'kybd_slv_v1_0_S00_AXI_inst' of component 'kybd_slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-3491] module 'kybd_slv_v1_0_S00_AXI' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:5' bound to instance 'kybd_slv_v1_0_S00_AXI_inst' of component 'kybd_slv_v1_0_S00_AXI' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0_S00_AXI' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter clk_freq bound to: 50000000 - type: integer 
 	Parameter debounce_counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:26' bound to instance 'KEYBOARD' of component 'ps2_keyboard' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:38]
+INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:26' bound to instance 'KEYBOARD' of component 'ps2_keyboard' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:38]
 	Parameter clk_freq bound to: 50000000 - type: integer 
 	Parameter debounce_counter_size bound to: 8 - type: integer 
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:36]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:36]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:36]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:70]
-INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (7#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:38]
-WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:342]
-WARNING: [Synth 8-3848] Net axi_awready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:115]
-WARNING: [Synth 8-3848] Net axi_wready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:116]
-WARNING: [Synth 8-3848] Net axi_bresp in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:117]
-WARNING: [Synth 8-3848] Net axi_bvalid in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:118]
-INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0_S00_AXI' (8#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0' (9#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'design_1_kybd_slv_0_2' (10#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:87]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (7#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:342]
+WARNING: [Synth 8-3848] Net axi_awready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:115]
+WARNING: [Synth 8-3848] Net axi_wready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:116]
+WARNING: [Synth 8-3848] Net axi_bresp in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:117]
+WARNING: [Synth 8-3848] Net axi_bvalid in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0_S00_AXI' (8#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0' (9#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1_kybd_slv_0_2' (10#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:87]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -180,24 +182,24 @@ INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_sys
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1342]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1343]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (12#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (13#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:327]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (14#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 66 connections declared, but only 64 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:233]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:421]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:996]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (15#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:996]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1142]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (16#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1142]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1288]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (13#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (14#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 66 connections declared, but only 64 given [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:233]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:421]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:996]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (15#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:996]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1142]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (16#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1142]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1288]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -223,39 +225,39 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_axi_pro
 	Parameter P_SLVERR bound to: 2'b10 
 	Parameter P_PROTECTION bound to: 1 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
 	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_aw_channel' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_aw_channel' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_cmd_translator' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_cmd_translator' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter P_AXBURST_FIXED bound to: 2'b00 
 	Parameter P_AXBURST_INCR bound to: 2'b01 
 	Parameter P_AXBURST_WRAP bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_incr_cmd' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_incr_cmd' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_incr_cmd' (17#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wrap_cmd' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_incr_cmd' (17#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wrap_cmd' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wrap_cmd' (18#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_cmd_translator' (19#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wrap_cmd' (18#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_cmd_translator' (19#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE_WAIT bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm' (20#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_aw_channel' (21#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_b_channel' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm' (20#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_aw_channel' (21#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_b_channel' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter LP_RESP_OKAY bound to: 2'b00 
 	Parameter LP_RESP_EXOKAY bound to: 2'b01 
@@ -267,7 +269,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_b_c
 	Parameter P_RWIDTH bound to: 2 - type: integer 
 	Parameter P_RDEPTH bound to: 4 - type: integer 
 	Parameter P_RAWIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 20 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -275,8 +277,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo' (22#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo' (22#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 2 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -284,22 +286,22 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0' (22#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_b_channel' (23#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_ar_channel' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0' (22#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_b_channel' (23#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_ar_channel' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
-WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
-WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm' (24#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_ar_channel' (25#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_r_channel' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm' (24#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_ar_channel' (25#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_r_channel' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter P_WIDTH bound to: 13 - type: integer 
@@ -308,7 +310,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_r_c
 	Parameter P_D_WIDTH bound to: 34 - type: integer 
 	Parameter P_D_DEPTH bound to: 32 - type: integer 
 	Parameter P_D_AWIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 34 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -316,8 +318,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1' (25#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1' (25#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 13 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -325,9 +327,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2' (25#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_r_channel' (26#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2' (25#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s_r_channel' (26#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
@@ -438,27 +440,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_registe
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (27#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (27#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' (27#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' (27#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' (27#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' (27#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' (27#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' (27#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -550,8 +552,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' 
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (28#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (28#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -643,10 +645,10 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' 
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (29#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
-WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (29#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -757,27 +759,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_registe
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized3' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized3' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized3' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized4' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized3' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized4' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized4' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized5' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized4' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized5' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized5' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized6' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized5' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized6' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized6' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized6' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -869,8 +871,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -962,15 +964,15 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice__parameterized0' (30#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
-WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s' (31#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' (32#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (33#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (34#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1288]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice__parameterized0' (30#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s' (31#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' (32#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (33#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (34#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1288]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -1019,7 +1021,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -1072,7 +1074,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -1086,27 +1088,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:
 	Parameter C_TARGET_QUAL bound to: 3'b011 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000111100000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (35#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (36#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (35#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (36#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000111100000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (36#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (37#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (36#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (37#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -1121,8 +1123,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (38#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (38#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -1130,51 +1132,51 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (39#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (39#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (40#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (40#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (40#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (40#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (41#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (41#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized7' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (41#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized7' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized7' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized7' (41#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (42#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (43#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (44#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (45#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:421]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (41#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (42#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (43#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (44#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (45#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:421]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -1184,8 +1186,8 @@ INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Project6_
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -1199,37 +1201,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Project6_test/Proje
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
 	Parameter INIT bound to: 16'b0000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (46#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -1237,49 +1239,49 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Project6_test/Project6_te
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (47#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (48#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (47#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (48#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (49#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (50#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (51#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (52#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:383]
-INFO: [Synth 8-638] synthesizing module 'design_1_slv_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (49#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (50#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (51#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (52#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:383]
+INFO: [Synth 8-638] synthesizing module 'design_1_slv_0_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'slv_v1_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:5' bound to instance 'U0' of component 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:160]
-INFO: [Synth 8-638] synthesizing module 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:54]
+INFO: [Synth 8-3491] module 'slv_v1_0' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:5' bound to instance 'U0' of component 'slv_v1_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:54]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'slv_v1_0_S00_AXI' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:6' bound to instance 'slv_v1_0_S00_AXI_inst' of component 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:92]
+INFO: [Synth 8-3491] module 'slv_v1_0_S00_AXI' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:6' bound to instance 'slv_v1_0_S00_AXI_inst' of component 'slv_v1_0_S00_AXI' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0_S00_AXI' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:92]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter CHARS_PER_LINE bound to: 80 - type: integer 
 	Parameter LINES_PER_PAGE bound to: 40 - type: integer 
-INFO: [Synth 8-3491] module 'ascii_writer' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:15' bound to instance 'ASCII_INST' of component 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:202]
-INFO: [Synth 8-638] synthesizing module 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:34]
+INFO: [Synth 8-3491] module 'ascii_writer' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:15' bound to instance 'ASCII_INST' of component 'ascii_writer' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'ascii_writer' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:34]
 	Parameter CHARS_PER_LINE bound to: 80 - type: integer 
 	Parameter LINES_PER_PAGE bound to: 40 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:77]
-INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:11' bound to instance 'LUT' of component 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:19]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:77]
+INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:11' bound to instance 'LUT' of component 'char8x12_lookup_table' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:19]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -1355,7 +1357,7 @@ INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Project6_tes
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000001111111001101100011011000011100000111000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110110110111000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:26]
+INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:26]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -1431,25 +1433,25 @@ INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/P
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100111111001111110011111100111111001111110000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (53#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:19]
-WARNING: [Synth 8-6014] Unused sequential element current_char_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:82]
-WARNING: [Synth 8-6014] Unused sequential element current_line_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:83]
-WARNING: [Synth 8-6014] Unused sequential element reg_pixels_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'ascii_writer' (54#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:34]
-INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:34' bound to instance 'VGA' of component 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:51]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:128]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:157]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:186]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:215]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:244]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:273]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:302]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:331]
-INFO: [Synth 8-256] done synthesizing module 'vga_sync' (55#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:51]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:236]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (53#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element current_char_local_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element current_line_local_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element reg_pixels_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'ascii_writer' (54#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:34]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:34' bound to instance 'VGA' of component 'vga_sync' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:51]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:128]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:157]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:186]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:215]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:244]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:273]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:302]
+INFO: [Synth 8-226] default block is never used [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:331]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (55#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:51]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -1525,20 +1527,20 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Project6_test/Projec
 	Parameter C_COUNT_36K_BRAM bound to: 34 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 2 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     32.814778 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_3' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_3' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:239]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (66#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:295]
-WARNING: [Synth 8-6014] Unused sequential element previous_awaddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:522]
-WARNING: [Synth 8-3848] Net axi_arready in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:174]
-WARNING: [Synth 8-3848] Net axi_rdata in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:175]
-WARNING: [Synth 8-3848] Net axi_rresp in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:176]
-WARNING: [Synth 8-3848] Net axi_rvalid in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:177]
-WARNING: [Synth 8-3848] Net we in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:162]
-INFO: [Synth 8-256] done synthesizing module 'slv_v1_0_S00_AXI' (67#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'slv_v1_0' (68#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'design_1_slv_0_0' (69#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (70#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (71#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_3' declared at 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_3' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:239]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (66#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element previous_awaddr_reg was removed.  [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:522]
+WARNING: [Synth 8-3848] Net axi_arready in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:174]
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:175]
+WARNING: [Synth 8-3848] Net axi_rresp in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:176]
+WARNING: [Synth 8-3848] Net axi_rvalid in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:177]
+WARNING: [Synth 8-3848] Net we in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0_S00_AXI' (67#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0' (68#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'design_1_slv_0_0' (69#1) [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (70#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (71#1) [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
@@ -1641,7 +1643,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected p
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[944]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished RTL Elaboration : Time (s): cpu = 00:02:15 ; elapsed = 00:02:19 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1654,10 +1656,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:20 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:16 ; elapsed = 00:02:20 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1665,55 +1667,55 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [C:/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
-Finished Parsing XDC File [C:/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
+Finished Parsing XDC File [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1308.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1156.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   FDR => FDRE: 12 instances
   RAMB16_S9 => RAMB18E1: 2 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1308.578 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1156.777 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:47 ; elapsed = 00:02:50 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished Constraint Validation : Time (s): cpu = 00:02:24 ; elapsed = 00:02:28 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:47 ; elapsed = 00:02:50 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:24 ; elapsed = 00:02:28 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_50M/U0. (constraint file  C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 42).
-Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 48).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 37).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_50M/U0. (constraint file  C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 42).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/dont_touch.xdc, line 48).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/slv_0. (constraint file  auto generated constraint, line ).
@@ -1725,13 +1727,13 @@ Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint fil
 Applied set_property DONT_TOUCH = true for design_1_i/kybd_slv_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:47 ; elapsed = 00:02:51 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:25 ; elapsed = 00:02:29 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2870]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2870]
-INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2870]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2870]
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ascii_writer'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -1752,7 +1754,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ascii_writer'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:51 ; elapsed = 00:02:55 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2137,10 +2139,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
-INFO: [Synth 8-4471] merging register 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' into 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:86]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+INFO: [Synth 8-4471] merging register 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' into 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/ascii_writer.vhd:86]
 DSP Report: Generating DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2, operation Mode is: (A:0x50)*B2.
 DSP Report: register U0/slv_v1_0_S00_AXI_inst/row_reg is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2.
 DSP Report: operator U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2 is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2.
@@ -2180,7 +2182,7 @@ INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[2]' (FDC) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[0]' (FDC) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:57 ; elapsed = 00:03:02 . Memory (MB): peak = 1308.578 ; gain = 603.945
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:38 . Memory (MB): peak = 1156.777 ; gain = 605.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2208,13 +2210,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1313.477 ; gain = 608.844
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:02:50 . Memory (MB): peak = 1161.996 ; gain = 610.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:12 ; elapsed = 00:03:17 . Memory (MB): peak = 1349.723 ; gain = 645.090
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:02:51 . Memory (MB): peak = 1198.609 ; gain = 646.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2225,10 +2227,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:93]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:93]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/bc0d/src/vga_sync.vhd:94]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 1360.637 ; gain = 656.004
+Finished Technology Mapping : Time (s): cpu = 00:02:48 ; elapsed = 00:02:53 . Memory (MB): peak = 1208.895 ; gain = 657.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2255,7 +2257,7 @@ INFO: [Synth 8-5365] Flop U0/slv_v1_0_S00_AXI_inst/VGA/v_sync_reg_reg is being i
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished IO Insertion : Time (s): cpu = 00:02:50 ; elapsed = 00:02:55 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2268,7 +2270,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:50 ; elapsed = 00:02:55 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2280,25 +2282,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2512,17 +2514,17 @@ Report Instance Areas:
 |139   |          VGA                                          |vga_sync                                                       |   129|
 +------+-------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 544 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:03:16 . Memory (MB): peak = 1364.438 ; gain = 659.805
-Synthesis Optimization Complete : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1364.438 ; gain = 659.805
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:02:51 . Memory (MB): peak = 1213.680 ; gain = 661.934
+Synthesis Optimization Complete : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1213.680 ; gain = 661.934
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1384.492 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1228.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   FDR => FDRE: 8 instances
@@ -2530,12 +2532,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-267 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+267 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:26 ; elapsed = 00:03:32 . Memory (MB): peak = 1384.492 ; gain = 928.055
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1384.492 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:57 ; elapsed = 00:03:04 . Memory (MB): peak = 1228.754 ; gain = 933.598
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1228.754 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 21 15:01:16 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 22 14:52:55 2021...

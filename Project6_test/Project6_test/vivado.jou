@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 22 14:48:30 2021
+# Process ID: 7672
+# Current directory: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10316 C:\Users\morenzr\Documents\GitHub\EE316-Final-Project\Project6_test\Project6_test\Project6_test.xpr
+# Log file: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/vivado.log
+# Journal file: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf

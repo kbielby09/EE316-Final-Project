@@ -30,8 +30,8 @@
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[15]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[24]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[26]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[23]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[23]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[27]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[8]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[20]/CE|

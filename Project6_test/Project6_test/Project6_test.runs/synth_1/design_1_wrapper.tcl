@@ -17,36 +17,34 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Project6_test/Project6_test/Project6_test.cache/wt [current_project]
-set_property parent.project_path C:/Project6_test/Project6_test/Project6_test.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.cache/wt [current_project]
+set_property parent.project_path C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/bielbyka/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:cora-z7-10:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Project6_test/Project6_test/ip_repo [current_project]
+set_property ip_repo_paths c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/ip_repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Project6_test/Project6_test/Project6_test.cache/ip [current_project]
+set_property ip_output_repo c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/initial_color.coe
-read_verilog -library xil_defaultlib C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/initial_color.coe
+read_verilog -library xil_defaultlib C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -56,8 +54,8 @@ set_property used_in_implementation false [get_files -all C:/Project6_test/Proje
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc
-set_property used_in_implementation false [get_files C:/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
+read_xdc C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc
+set_property used_in_implementation false [get_files C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
