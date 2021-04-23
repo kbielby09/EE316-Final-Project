@@ -84,10 +84,10 @@ int main()
 		}
 
 		// send var to scancode2ascii
-		translate(var);
+		unsigned char result = translate(var);
 
 		// write data to the display
-		SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, var);
+		SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, result);
 	}
    printf("Hola Mundo\n");
     return 0;
