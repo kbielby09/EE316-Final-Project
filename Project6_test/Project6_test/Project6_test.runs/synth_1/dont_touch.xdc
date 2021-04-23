@@ -12,7 +12,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_proces
 # IP: bd/design_1/ip/design_1_slv_0_0/design_1_slv_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_slv_0_0 || ORIG_REF_NAME==design_1_slv_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/blk_mem_gen_0.xci
+# IP: bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/blk_mem_gen_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
@@ -30,13 +30,16 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_clk_wi
 # IP: bd/design_1/ip/design_1_kybd_slv_0_2/design_1_kybd_slv_0_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_kybd_slv_0_2 || ORIG_REF_NAME==design_1_kybd_slv_0_2} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
 
 # XDC: bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc
+# XDC: bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/blk_mem_gen_0_ooc.xdc
 
 # XDC: bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_50M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -51,6 +54,14 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_0_0 || ORIG_REF_NAME==design_1_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc
+
+# XDC: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc
+
+# XDC: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc
 

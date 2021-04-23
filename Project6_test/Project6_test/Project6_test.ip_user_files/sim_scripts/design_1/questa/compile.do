@@ -51,13 +51,6 @@ vlog -work xil_defaultlib -64 -sv -L axi_vip_v1_1_5 -L processing_system7_vip_v1
 vcom -work xpm -64 -93 \
 "C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vcom -work xil_defaultlib -64 -93 \
-"../../../bd/design_1/ipshared/13b8/src/debounce.vhd" \
-"../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/13b8/src/ps2_keyboard.vhd" \
-"../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0.vhd" \
-"../../../bd/design_1/ip/design_1_kybd_slv_0_1/sim/design_1_kybd_slv_0_1.vhd" \
-
 vlog -work axi_infrastructure_v1_1_0 -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
@@ -71,17 +64,17 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../Project6_test.srcs/sources_1/
 "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
 
 vlog -work blk_mem_gen_v8_4_3 -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/simulation/blk_mem_gen_v8_4.v" \
+"../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
+"../../../bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/sim/blk_mem_gen_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/design_1/ipshared/bc0d/src/ascii_writer.vhd" \
-"../../../bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd" \
-"../../../bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/bc0d/src/vga_sync.vhd" \
-"../../../bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/ascii_writer.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd" \
+"../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/vga_sync.vhd" \
+"../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_slv_0_0/sim/design_1_slv_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
@@ -120,6 +113,13 @@ vcom -work xil_defaultlib -64 -93 \
 vlog -work xil_defaultlib -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_1/ipshared/78d9/src/debounce.vhd" \
+"../../../bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd" \
+"../../../bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_kybd_slv_0_2/sim/design_1_kybd_slv_0_2.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_19 -64 "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

@@ -2,57 +2,56 @@
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[3]/D|
-|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[2]/D|
-|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[3]/D|
-|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]/D|
 |               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]/D|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[14]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[13]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[6]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[11]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[4]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[3]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[8]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[9]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[15]/CE|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[2]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[3]/D|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[12]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[0]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[19]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[2]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[13]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[8]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[10]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[1]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[2]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[3]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[5]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[7]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[2]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[1]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[9]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[0]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[10]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[25]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[11]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[17]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[15]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[24]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[26]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[14]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[23]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[27]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[8]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[20]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[28]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[2]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[16]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[4]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[13]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[11]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                         design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[15]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[4]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[1]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[21]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[29]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[25]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[0]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[24]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[18]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[3]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[10]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[12]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[20]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[5]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[9]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[19]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[29]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[13]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[4]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[21]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[22]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[7]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[3]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[18]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[31]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[10]/CE|
 | clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[30]/CE|
-| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                          design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[12]/D|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[15]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[31]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[11]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[28]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[26]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[23]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                             design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[7]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |               clk_fpga_0 |                                            design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[27]/CE|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

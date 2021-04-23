@@ -1,15 +1,15 @@
 vhdl xil_defaultlib  \
-"../../../bd/design_1/ipshared/13b8/src/debounce.vhd" \
-"../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/13b8/src/ps2_keyboard.vhd" \
-"../../../bd/design_1/ipshared/13b8/hdl/kybd_slv_v1_0.vhd" \
-"../../../bd/design_1/ip/design_1_kybd_slv_0_1/sim/design_1_kybd_slv_0_1.vhd" \
-"../../../bd/design_1/ipshared/bc0d/src/ascii_writer.vhd" \
-"../../../bd/design_1/ipshared/bc0d/src/char8x12_lookup_table.vhd" \
-"../../../bd/design_1/ipshared/bc0d/hdl/slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/bc0d/src/vga_sync.vhd" \
-"../../../bd/design_1/ipshared/bc0d/hdl/slv_v1_0.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/ascii_writer.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd" \
+"../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/ee60/src/vga_sync.vhd" \
+"../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_slv_0_0/sim/design_1_slv_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_1/ipshared/78d9/src/debounce.vhd" \
+"../../../bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd" \
+"../../../bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_kybd_slv_0_2/sim/design_1_kybd_slv_0_2.vhd" \
 
 nosort

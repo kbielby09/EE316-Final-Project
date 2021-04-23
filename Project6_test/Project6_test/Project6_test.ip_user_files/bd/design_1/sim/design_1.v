@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Wed Apr 21 14:30:01 2021
+//Date        : Thu Apr 22 17:34:57 2021
 //Host        : C195-UL-41 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=7,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=7,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -35,6 +35,7 @@ module design_1
     PS2_CLK,
     PS2_DATA,
     hsync,
+    ps2,
     reset_rtl,
     sys_clock,
     vga_b,
@@ -65,6 +66,7 @@ module design_1
   input PS2_CLK;
   input PS2_DATA;
   output hsync;
+  output ps2;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 125000000, INSERT_VIP 0, PHASE 0.000" *) input sys_clock;
   output [3:0]vga_b;
@@ -76,6 +78,8 @@ module design_1
   wire PS2_DATA_1;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
+  wire kybd_slv_0_IRQ_I;
+  wire kybd_slv_0_PS2_new_sig;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -187,6 +191,7 @@ module design_1
   assign PS2_CLK_1 = PS2_CLK;
   assign PS2_DATA_1 = PS2_DATA;
   assign hsync = slv_0_hsync;
+  assign ps2 = kybd_slv_0_PS2_new_sig;
   assign reset_rtl_1 = reset_rtl;
   assign sys_clock_1 = sys_clock;
   assign vga_b[3:0] = slv_0_vga_b;
@@ -198,16 +203,19 @@ module design_1
         .clk_out1(clk_wiz_0_clk_out1),
         .clk_out2(clk_wiz_0_clk_out2),
         .reset(reset_rtl_1));
-  design_1_kybd_slv_0_1 kybd_slv_0
-       (.PS2_CLK(PS2_CLK_1),
+  design_1_kybd_slv_0_2 kybd_slv_0
+       (.IRQ_I(kybd_slv_0_IRQ_I),
+        .I_CLK_50MHZ(clk_wiz_0_clk_out2),
+        .PS2_CLK(PS2_CLK_1),
         .PS2_DATA(PS2_DATA_1),
+        .PS2_new_sig(kybd_slv_0_PS2_new_sig),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[3:0]),
+        .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR),
         .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .s00_axi_arprot(ps7_0_axi_periph_M00_AXI_ARPROT),
         .s00_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
         .s00_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s00_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[3:0]),
+        .s00_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR),
         .s00_axi_awprot(ps7_0_axi_periph_M00_AXI_AWPROT),
         .s00_axi_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
         .s00_axi_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
@@ -242,6 +250,7 @@ module design_1
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .IRQ_F2P(kybd_slv_0_IRQ_I),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
