@@ -51,22 +51,35 @@
 #include "kybd_slv.h"
 #include "slv.h"
 
+#include "xgpio.h"
 #include "platform.h"
 #include "xil_printf.h"
 #include "xil_types.h"
 #include "xparameters.h"
 #include "xil_io.h"
 
+// GPIO instance
+XGpio gpioInstance;
 
 int main()
 {
 	int var;
-//	SLV_Reg_SelfTest();
+
+	int Status;
+
+	/* Initialize the GPIO driver. If an error occurs then exit */
+	Status = XGpio_Initialize(&gpioInstance, XPAR_AXI_GPIO_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	printf("gpio initialized\n");
 
 	while(1){
 		// read data from the keyboard
-		var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
-		if(var != 0){
+
+		if(XGpio_DiscreteRead(&gpioInstance, 1) > 0){
+			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
 			printf("var: %x \n", var);
 		}
 
