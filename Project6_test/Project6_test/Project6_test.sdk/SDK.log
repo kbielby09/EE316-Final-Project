@@ -2366,3 +2366,6 @@ con
 ----------------End of Script----------------
 
 14:22:50 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+14:41:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+14:41:37 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"

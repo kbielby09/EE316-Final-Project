@@ -129,7 +129,6 @@ bool newCode(int scancode) {
 	else {
 		translate(scancode);
 	}
-	return false;
 }
 
 unsigned char translate(int scancode){

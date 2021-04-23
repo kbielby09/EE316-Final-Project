@@ -10032,3 +10032,60 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-183
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:22:50.531
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-183
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:34.792
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:34.795
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.889
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.905
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.905
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.909
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#39]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.910
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.916
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7010 210370AD5263A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.917
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7010 210370AD5263A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.923
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.941
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.941
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.962
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:35.962
+!MESSAGE XSCT Command: [fpga -file C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:37.173
+!MESSAGE XSCT command with result: [fpga -file C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:37.974
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-23 14:41:37.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext

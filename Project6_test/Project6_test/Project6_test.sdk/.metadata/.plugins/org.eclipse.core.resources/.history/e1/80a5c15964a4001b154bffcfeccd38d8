@@ -94,12 +94,10 @@ int main()
 		if(XGpio_DiscreteRead(&gpioInstance, 1) > 0){
 			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
 			printf("var: %x \n", var);
-
-			// send var to scancode2ascii
-			unsigned char result = translate(var);
-			// write data to the display
-//			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, result);
 		}
+
+		// write data to the display
+		SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, var);
 	}
    printf("Hola Mundo\n");
     return 0;
@@ -129,7 +127,6 @@ bool newCode(int scancode) {
 	else {
 		translate(scancode);
 	}
-	return false;
 }
 
 unsigned char translate(int scancode){

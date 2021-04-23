@@ -98,7 +98,7 @@ int main()
 			// send var to scancode2ascii
 			unsigned char result = translate(var);
 			// write data to the display
-//			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, result);
+			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, result);
 		}
 	}
    printf("Hola Mundo\n");
@@ -129,7 +129,6 @@ bool newCode(int scancode) {
 	else {
 		translate(scancode);
 	}
-	return false;
 }
 
 unsigned char translate(int scancode){
