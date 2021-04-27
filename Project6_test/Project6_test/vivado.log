@@ -2,54 +2,64 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr 22 14:48:30 2021
-# Process ID: 7672
-# Current directory: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10316 C:\Users\morenzr\Documents\GitHub\EE316-Final-Project\Project6_test\Project6_test\Project6_test.xpr
-# Log file: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/vivado.log
-# Journal file: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test\vivado.jou
+# Start of session at: Tue Apr 27 14:20:29 2021
+# Process ID: 10428
+# Current directory: C:/EE316-Final-Project/Project6_test/Project6_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8464 C:\EE316-Final-Project\Project6_test\Project6_test\Project6_test.xpr
+# Log file: C:/EE316-Final-Project/Project6_test/Project6_test/vivado.log
+# Journal file: C:/EE316-Final-Project/Project6_test/Project6_test\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test'
+open_project C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.xpr
 INFO: [Project 1-313] Project file moved from 'C:/Project6_test/Project6_test' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Users/bielbyka/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/bielbyka/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/EE316-Final-Project/Users/bielbyka/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/bielbyka/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/EE316-Final-Project/Project6_test/Project6_test/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 764.563 ; gain = 137.676
-INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 777.637 ; gain = 152.957
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Thu Apr 22 14:49:43 2021] Launched synth_1...
-Run output will be captured here: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/runme.log
-[Thu Apr 22 14:49:43 2021] Launched impl_1...
-Run output will be captured here: C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/runme.log
-launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+[Tue Apr 27 14:21:00 2021] Launched synth_1...
+Run output will be captured here: C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/runme.log
+[Tue Apr 27 14:21:00 2021] Launched impl_1...
+Run output will be captured here: C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.499 . Memory (MB): peak = 1664.449 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1664.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1664.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
 
-launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1790.695 ; gain = 845.926
+file copy -force C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-file copy -force C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+file copy -force C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/impl_1/design_1_wrapper.sysdef C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/Users/morenzr/Documents/GitHub/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 22 17:27:52 2021...
+launch_sdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk -hwspec C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
