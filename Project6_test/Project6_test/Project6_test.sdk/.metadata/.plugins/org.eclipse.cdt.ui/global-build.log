@@ -3776,3 +3776,28 @@ arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
   63752	   2608	  23360	  89720	  15e78	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
+16:51:24 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:136:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+    printf("data: %x\n", data);
+                  ~^     ~~~~
+                  %lx
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63752	   2608	  23360	  89720	  15e78	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '

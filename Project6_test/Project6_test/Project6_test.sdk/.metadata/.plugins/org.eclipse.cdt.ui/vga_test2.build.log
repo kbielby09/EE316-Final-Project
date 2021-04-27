@@ -1,4 +1,4 @@
-16:34:00 **** Auto Build of configuration Debug for project vga_test2 ****
+16:51:24 **** Auto Build of configuration Debug for project vga_test2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -24,5 +24,5 @@ arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
 'Finished building: vga_test2.elf.size'
 ' '
 
-16:34:01 Build Finished (took 818ms)
+16:51:24 Build Finished (took 864ms)
 

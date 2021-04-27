@@ -183,19 +183,11 @@ unsigned char translate(int scancode){
 		case 0x14 :
 			// ctrl right code
 			if(e0Code == true) {
-//				ctrlRight = ! breakFlag;
-				while(breakFlag == false) {
-					ctrlRight = true;
-				}
-				ctrlRight = false;
+				ctrlRight = ! breakFlag;
 			}
 			// ctrl left code
 			else {
-//				ctrlLeft = ! breakFlag;
-				while(breakFlag == false) {
-					ctrlLeft = true;
-				}
-				ctrlLeft = false;
+				ctrlLeft = ! breakFlag;
 			}
 			break;
 		// shift left code
