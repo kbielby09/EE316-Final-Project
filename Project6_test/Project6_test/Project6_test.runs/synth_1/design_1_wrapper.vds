@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Apr 23 13:43:07 2021
-# Process ID: 51316
+# Start of session at: Tue Apr 27 08:33:30 2021
+# Process ID: 89940
 # Current directory: C:/Project6_test/Project6_test/Project6_test.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.vds
@@ -19,9 +19,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 56504 
+INFO: Helper process launched with PID 89912 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 881.348 ; gain = 177.020
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 882.324 ; gain = 177.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
@@ -464,8 +464,8 @@ WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GE
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (8#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -480,11 +480,11 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
 	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
@@ -525,8 +525,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (10#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (12#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (13#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (12#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (13#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
 INFO: [Synth 8-638] synthesizing module 'design_1_kybd_slv_0_2' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_kybd_slv_0_2/synth/design_1_kybd_slv_0_2.vhd:87]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -629,15 +629,15 @@ INFO: [Synth 8-6155] done synthesizing module 'PS7' (20#1) [C:/Xilinx/Vivado/201
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (21#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (22#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:271]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:477]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1180]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (23#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1180]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1326]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (24#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1326]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1472]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (25#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1472]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1604]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:273]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:479]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1182]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (23#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1182]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1328]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (24#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1328]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1474]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (25#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1474]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1606]
 INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1410,7 +1410,7 @@ WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_19_
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_b2s' (40#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' (41#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (42#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (43#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1604]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (43#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1606]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1623,9 +1623,9 @@ WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_be
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (51#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (52#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (53#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'design_1_xbar_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1141]
-WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'design_1_xbar_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1145]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (54#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'design_1_xbar_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1143]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'design_1_xbar_0' [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:1147]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (54#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:479]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -1698,29 +1698,29 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (57#1) [c:/Project6_test/
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (58#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (59#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (60#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:439]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:441]
 INFO: [Synth 8-638] synthesizing module 'design_1_slv_0_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'slv_v1_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd:5' bound to instance 'U0' of component 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:160]
-INFO: [Synth 8-638] synthesizing module 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd:54]
+INFO: [Synth 8-3491] module 'slv_v1_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd:5' bound to instance 'U0' of component 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd:55]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'slv_v1_0_S00_AXI' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:6' bound to instance 'slv_v1_0_S00_AXI_inst' of component 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:92]
+INFO: [Synth 8-3491] module 'slv_v1_0_S00_AXI' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:6' bound to instance 'slv_v1_0_S00_AXI_inst' of component 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0_S00_AXI' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:93]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter CHARS_PER_LINE bound to: 80 - type: integer 
 	Parameter LINES_PER_PAGE bound to: 40 - type: integer 
-INFO: [Synth 8-3491] module 'ascii_writer' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:15' bound to instance 'ASCII_INST' of component 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:202]
-INFO: [Synth 8-638] synthesizing module 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:34]
+INFO: [Synth 8-3491] module 'ascii_writer' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:15' bound to instance 'ASCII_INST' of component 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'ascii_writer' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:34]
 	Parameter CHARS_PER_LINE bound to: 80 - type: integer 
 	Parameter LINES_PER_PAGE bound to: 40 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:77]
-INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd:11' bound to instance 'LUT' of component 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd:19]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:77]
+INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd:11' bound to instance 'LUT' of component 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd:19]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -1871,23 +1871,22 @@ INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Project6_tes
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100111111001111110011111100111111001111110000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (61#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd:19]
-WARNING: [Synth 8-6014] Unused sequential element current_char_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:82]
-WARNING: [Synth 8-6014] Unused sequential element current_line_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:83]
-WARNING: [Synth 8-6014] Unused sequential element reg_pixels_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'ascii_writer' (62#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:34]
-INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:34' bound to instance 'VGA' of component 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:223]
-INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:51]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:128]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:157]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:186]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:215]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:244]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:273]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:302]
-INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:331]
-INFO: [Synth 8-256] done synthesizing module 'vga_sync' (63#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:51]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (61#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element current_char_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element current_line_local_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'ascii_writer' (62#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:34]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:34' bound to instance 'VGA' of component 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:51]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:128]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:157]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:186]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:215]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:244]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:273]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:302]
+INFO: [Synth 8-226] default block is never used [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:331]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (63#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:51]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:231]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/synth/blk_mem_gen_0.vhd:71]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -1966,17 +1965,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Project6_test/Projec
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     37.992932 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_3' declared at 'c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_3' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/synth/blk_mem_gen_0.vhd:239]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (74#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/synth/blk_mem_gen_0.vhd:71]
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:297]
-WARNING: [Synth 8-6014] Unused sequential element bram_wr_data_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:352]
-WARNING: [Synth 8-6014] Unused sequential element previous_awaddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:524]
-WARNING: [Synth 8-6014] Unused sequential element wea_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:546]
-WARNING: [Synth 8-3848] Net axi_arready in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:174]
-WARNING: [Synth 8-3848] Net axi_rdata in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:175]
-WARNING: [Synth 8-3848] Net axi_rresp in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:176]
-WARNING: [Synth 8-3848] Net axi_rvalid in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:177]
-WARNING: [Synth 8-3848] Net we in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:162]
-INFO: [Synth 8-256] done synthesizing module 'slv_v1_0_S00_AXI' (75#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'slv_v1_0' (76#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:290]
+WARNING: [Synth 8-3848] Net axi_arready in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:169]
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:170]
+WARNING: [Synth 8-3848] Net axi_rresp in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:171]
+WARNING: [Synth 8-3848] Net axi_rvalid in module/entity slv_v1_0_S00_AXI does not have driver. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0_S00_AXI' (75#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0' (76#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd:55]
 INFO: [Synth 8-256] done synthesizing module 'design_1_slv_0_0' (77#1) [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ip/design_1_slv_0_0/synth/design_1_slv_0_0.vhd:89]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (78#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (79#1) [C:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
@@ -2082,7 +2077,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected p
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[944]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:27 ; elapsed = 00:02:32 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished RTL Elaboration : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2095,10 +2090,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:32 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:29 ; elapsed = 00:02:34 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:28 ; elapsed = 00:02:32 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:29 ; elapsed = 00:02:34 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 244 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2135,23 +2130,23 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1314.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1334.465 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 207 instances were transformed.
   FDR => FDRE: 204 instances
   RAMB16_S9 => RAMB18E1: 2 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1314.363 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1334.465 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:38 ; elapsed = 00:02:43 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished Constraint Validation : Time (s): cpu = 00:02:38 ; elapsed = 00:02:44 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:38 ; elapsed = 00:02:43 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:38 ; elapsed = 00:02:44 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2172,7 +2167,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/kybd_slv_0. (constraint fi
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:38 ; elapsed = 00:02:43 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:39 ; elapsed = 00:02:44 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm'
@@ -2181,6 +2176,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ascii_writer'
+WARNING: [Synth 8-3936] Found unconnected internal register 'row_reg' and it is trimmed from '7' to '6' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd:206]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -2209,7 +2205,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ascii_writer'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:42 ; elapsed = 00:02:47 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2238,21 +2234,20 @@ Detailed RTL Component Info :
 	               64 Bit    Registers := 1     
 	               47 Bit    Registers := 2     
 	               36 Bit    Registers := 2     
-	               32 Bit    Registers := 7     
-	               16 Bit    Registers := 5     
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 3     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 9     
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 5     
-	                8 Bit    Registers := 5     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 4     
 	                5 Bit    Registers := 7     
 	                4 Bit    Registers := 12    
 	                3 Bit    Registers := 4     
 	                2 Bit    Registers := 19    
-	                1 Bit    Registers := 116   
+	                1 Bit    Registers := 117   
 +---Muxes : 
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     64 Bit        Muxes := 1     
@@ -2274,7 +2269,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 17    
 	   4 Input      2 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 147   
-	   4 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 8     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -2580,7 +2575,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -2588,7 +2583,7 @@ Detailed RTL Component Info :
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
 	   5 Input      1 Bit        Muxes := 1     
 Module vga_sync 
 Detailed RTL Component Info : 
@@ -2621,13 +2616,10 @@ Detailed RTL Component Info :
 Module slv_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
 	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -2650,7 +2642,7 @@ INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
-INFO: [Synth 8-4471] merging register 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' into 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/ascii_writer.vhd:86]
+INFO: [Synth 8-4471] merging register 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' into 'U0/slv_v1_0_S00_AXI_inst/ASCII_INST/scan_line_reg[3:0]' [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/ascii_writer.vhd:86]
 DSP Report: Generating DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2, operation Mode is: (A:0x50)*B2.
 DSP Report: register U0/slv_v1_0_S00_AXI_inst/row_reg is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2.
 DSP Report: operator U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2 is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/ASCII_INST/ram_addr2.
@@ -2739,6 +2731,12 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[0]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[1]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[2]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[3]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[4]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/ascii_reg[5]' (FDE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/rgb_reg[5]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/slv_0/\U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[0]' (FDC) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[1]'
@@ -2749,7 +2747,7 @@ INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[2]' (FDC) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[0]' (FDC) to 'design_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:48 ; elapsed = 00:02:54 . Memory (MB): peak = 1314.363 ; gain = 610.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2759,7 +2757,7 @@ DSP: Preliminary Mapping  Report (see note below)
 +-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name      | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|design_1_slv_0_0 | (A:0x50)*B2  | 7      | 16     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_slv_0_0 | (A:0x50)*B2  | 6      | 16     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
 |vga_sync         | C+A*(B:0x50) | 10     | 7      | 7      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 +-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
@@ -2777,13 +2775,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:01 ; elapsed = 00:03:07 . Memory (MB): peak = 1320.176 ; gain = 615.848
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:03:09 . Memory (MB): peak = 1334.465 ; gain = 629.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:03:08 . Memory (MB): peak = 1357.918 ; gain = 653.590
+Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:10 . Memory (MB): peak = 1358.734 ; gain = 653.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2794,10 +2792,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:93]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/ee60/src/vga_sync.vhd:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:93]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Project6_test/Project6_test/Project6_test.srcs/sources_1/bd/design_1/ipshared/7127/src/vga_sync.vhd:94]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:11 . Memory (MB): peak = 1367.699 ; gain = 663.371
+Finished Technology Mapping : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 1368.953 ; gain = 663.828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2824,7 +2822,7 @@ INFO: [Synth 8-5365] Flop U0/slv_v1_0_S00_AXI_inst/VGA/v_sync_reg_reg is being i
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:07 ; elapsed = 00:03:13 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished IO Insertion : Time (s): cpu = 00:03:09 ; elapsed = 00:03:15 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2837,7 +2835,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:07 ; elapsed = 00:03:13 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:09 ; elapsed = 00:03:15 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2849,25 +2847,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2901,46 +2899,47 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BIBUF      |   130|
-|2     |BUFG       |     4|
-|3     |CARRY4     |    37|
+|2     |BUFG       |     3|
+|3     |CARRY4     |    35|
 |4     |DSP48E1    |     1|
 |5     |DSP48E1_1  |     1|
-|6     |LUT1       |   137|
-|7     |LUT2       |    82|
-|8     |LUT3       |   302|
+|6     |LUT1       |   138|
+|7     |LUT2       |    81|
+|8     |LUT3       |   314|
 |9     |LUT4       |   132|
 |10    |LUT5       |   208|
-|11    |LUT6       |   329|
+|11    |LUT6       |   324|
 |12    |MMCME2_ADV |     1|
 |13    |MUXF7      |     6|
 |14    |MUXF8      |     1|
 |15    |PS7        |     1|
-|16    |RAMB18E1   |     1|
-|17    |RAMB18E1_1 |     1|
-|18    |RAMB36E1   |     5|
-|19    |RAMB36E1_1 |    12|
-|20    |RAMB36E1_2 |     3|
-|21    |RAMB36E1_3 |    12|
-|22    |RAMB36E1_4 |     1|
-|23    |RAMB36E1_5 |     1|
-|24    |SRL16      |     1|
-|25    |SRL16E     |    18|
-|26    |SRLC32E    |    47|
-|27    |FDCE       |    28|
-|28    |FDPE       |     2|
-|29    |FDR        |   136|
-|30    |FDRE       |  1086|
-|31    |FDSE       |    53|
-|32    |IBUF       |     4|
-|33    |OBUF       |    15|
+|16    |RAMB16_S9  |     2|
+|17    |RAMB18E1   |     1|
+|18    |RAMB18E1_1 |     1|
+|19    |RAMB36E1   |     5|
+|20    |RAMB36E1_1 |    12|
+|21    |RAMB36E1_2 |     3|
+|22    |RAMB36E1_3 |    12|
+|23    |RAMB36E1_4 |     1|
+|24    |RAMB36E1_5 |     1|
+|25    |SRL16      |     1|
+|26    |SRL16E     |    18|
+|27    |SRLC32E    |    47|
+|28    |FDCE       |    29|
+|29    |FDPE       |     2|
+|30    |FDR        |   136|
+|31    |FDRE       |  1047|
+|32    |FDSE       |    53|
+|33    |IBUF       |     4|
+|34    |OBUF       |    21|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                      |Module                                                         |Cells |
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                           |                                                               |  2798|
-|2     |  design_1_i                                                                  |design_1                                                       |  2780|
+|1     |top                                                                           |                                                               |  2772|
+|2     |  design_1_i                                                                  |design_1                                                       |  2748|
 |3     |    axi_gpio_0                                                                |design_1_axi_gpio_0_0                                          |   453|
 |4     |      U0                                                                      |axi_gpio                                                       |   453|
 |5     |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif                                                  |    94|
@@ -2950,8 +2949,8 @@ Report Instance Areas:
 |9     |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1                                      |     1|
 |10    |        gpio_core_1                                                           |GPIO_Core                                                      |   325|
 |11    |          \Not_Dual.INPUT_DOUBLE_REGS3                                        |cdc_sync                                                       |   128|
-|12    |    clk_wiz_0                                                                 |design_1_clk_wiz_0_0                                           |     5|
-|13    |      inst                                                                    |design_1_clk_wiz_0_0_clk_wiz                                   |     5|
+|12    |    clk_wiz_0                                                                 |design_1_clk_wiz_0_0                                           |     4|
+|13    |      inst                                                                    |design_1_clk_wiz_0_0_clk_wiz                                   |     4|
 |14    |    kybd_slv_0                                                                |design_1_kybd_slv_0_2                                          |   112|
 |15    |      U0                                                                      |kybd_slv_v1_0                                                  |   112|
 |16    |        kybd_slv_v1_0_S00_AXI_inst                                            |kybd_slv_v1_0_S00_AXI                                          |   112|
@@ -3001,9 +3000,9 @@ Report Instance Areas:
 |60    |          \ACTIVE_LOW_EXT.ACT_LO_EXT                                          |cdc_sync__parameterized0_1                                     |     6|
 |61    |        SEQ                                                                   |sequence_psr                                                   |    38|
 |62    |          SEQ_COUNTER                                                         |upcnt_n                                                        |    13|
-|63    |    slv_0                                                                     |design_1_slv_0_0                                               |   453|
-|64    |      U0                                                                      |slv_v1_0                                                       |   453|
-|65    |        slv_v1_0_S00_AXI_inst                                                 |slv_v1_0_S00_AXI                                               |   453|
+|63    |    slv_0                                                                     |design_1_slv_0_0                                               |   422|
+|64    |      U0                                                                      |slv_v1_0                                                       |   422|
+|65    |        slv_v1_0_S00_AXI_inst                                                 |slv_v1_0_S00_AXI                                               |   422|
 |66    |          BRAM                                                                |blk_mem_gen_0                                                  |   185|
 |67    |            U0                                                                |blk_mem_gen_v8_4_3                                             |   185|
 |68    |              inst_blk_mem_gen                                                |blk_mem_gen_v8_4_3_synth                                       |   185|
@@ -3084,33 +3083,35 @@ Report Instance Areas:
 |143   |                      \prim_init.ram                                          |blk_mem_gen_prim_wrapper_init__parameterized7                  |     1|
 |144   |                    \ramloop[9].ram.r                                         |blk_mem_gen_prim_width__parameterized8                         |     1|
 |145   |                      \prim_init.ram                                          |blk_mem_gen_prim_wrapper_init__parameterized8                  |     1|
-|146   |          ASCII_INST                                                          |ascii_writer                                                   |    54|
-|147   |          VGA                                                                 |vga_sync                                                       |   129|
+|146   |          ASCII_INST                                                          |ascii_writer                                                   |    85|
+|147   |            LUT                                                               |char8x12_lookup_table                                          |    11|
+|148   |          VGA                                                                 |vga_sync                                                       |   129|
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 583 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:03:08 . Memory (MB): peak = 1372.492 ; gain = 668.164
-Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:03:14 . Memory (MB): peak = 1372.492 ; gain = 668.164
+Synthesis finished with 0 errors, 0 critical warnings and 585 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:03:10 . Memory (MB): peak = 1373.730 ; gain = 668.605
+Synthesis Optimization Complete : Time (s): cpu = 00:03:09 ; elapsed = 00:03:16 . Memory (MB): peak = 1373.730 ; gain = 668.605
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1385.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1398.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 137 instances were transformed.
+  A total of 139 instances were transformed.
   FDR => FDRE: 136 instances
+  RAMB16_S9 => RAMB18E1: 2 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-446 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
+452 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:15 ; elapsed = 00:03:24 . Memory (MB): peak = 1385.582 ; gain = 930.199
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1385.582 ; gain = 0.000
+synth_design: Time (s): cpu = 00:03:18 ; elapsed = 00:03:26 . Memory (MB): peak = 1398.035 ; gain = 943.234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1398.035 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 23 13:46:50 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 27 08:37:11 2021...

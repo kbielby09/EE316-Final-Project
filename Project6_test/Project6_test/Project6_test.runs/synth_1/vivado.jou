@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Apr 23 13:43:07 2021
-# Process ID: 51316
+# Start of session at: Tue Apr 27 08:33:30 2021
+# Process ID: 89940
 # Current directory: C:/Project6_test/Project6_test/Project6_test.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.vds

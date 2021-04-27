@@ -2,49 +2,50 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1090 -y 440 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1090 -y 460 -defaultsOSRD
-preplace port hsync -pg 1 -lvl 4 -x 1090 -y 790 -defaultsOSRD
-preplace port vsync -pg 1 -lvl 4 -x 1090 -y 810 -defaultsOSRD
-preplace port reset_rtl -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
-preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
-preplace port PS2_CLK -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
-preplace port PS2_DATA -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
-preplace port ps2 -pg 1 -lvl 4 -x 1090 -y 120 -defaultsOSRD
-preplace portBus vga_r -pg 1 -lvl 4 -x 1090 -y 830 -defaultsOSRD
-preplace portBus vga_g -pg 1 -lvl 4 -x 1090 -y 850 -defaultsOSRD
-preplace portBus vga_b -pg 1 -lvl 4 -x 1090 -y 870 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 490 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 600 -y 280 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 230 -y 710 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 600 -y 820 -defaultsOSRD
-preplace inst kybd_slv_0 -pg 1 -lvl 3 -x 930 -y 110 -defaultsOSRD
-preplace inst slv_0 -pg 1 -lvl 3 -x 930 -y 830 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 930 -y 320 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 600 440 470 780
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 610 430
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 450 480 790
-preplace netloc slv_0_hsync 1 3 1 NJ 790
-preplace netloc slv_0_vsync 1 3 1 NJ 810
-preplace netloc slv_0_vga_r 1 3 1 NJ 830
-preplace netloc slv_0_vga_b 1 3 1 NJ 870
-preplace netloc slv_0_vga_g 1 3 1 NJ 850
-preplace netloc reset_rtl_1 1 0 2 NJ 810 NJ
-preplace netloc sys_clock_1 1 0 2 NJ 830 NJ
-preplace netloc clk_wiz_0_clk_out1 1 2 1 N 810
-preplace netloc clk_wiz_0_clk_out2 1 2 1 760 80n
-preplace netloc PS2_CLK_1 1 0 3 NJ 100 NJ 100 NJ
-preplace netloc PS2_DATA_1 1 0 3 NJ 120 NJ 120 NJ
-preplace netloc kybd_slv_0_PS2_new_sig 1 3 1 NJ 120
-preplace netloc kybd_slv_0_IRQ_I 1 3 1 1070 100n
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 180n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 770 280n
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 440 NJ 440 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 460 NJ 460 NJ
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 750 60n
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 N 300
-levelinfo -pg 1 0 230 600 930 1090
-pagesize -pg 1 -db -bbox -sgen -130 0 1210 930
+preplace port DDR -pg 1 -lvl 5 -x 1290 -y 440 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1290 -y 460 -defaultsOSRD
+preplace port hsync -pg 1 -lvl 5 -x 1290 -y 790 -defaultsOSRD
+preplace port vsync -pg 1 -lvl 5 -x 1290 -y 810 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -160 -y 810 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -160 -y 830 -defaultsOSRD
+preplace port PS2_CLK -pg 1 -lvl 0 -x -160 -y 100 -defaultsOSRD
+preplace port PS2_DATA -pg 1 -lvl 0 -x -160 -y 120 -defaultsOSRD
+preplace port ps2 -pg 1 -lvl 5 -x 1290 -y 120 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 5 -x 1290 -y 830 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 5 -x 1290 -y 850 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 5 -x 1290 -y 870 -defaultsOSRD
+preplace portBus rgb -pg 1 -lvl 5 -x 1290 -y 900 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 60 -y 350 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 800 -y 280 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 470 -y 710 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 800 -y 820 -defaultsOSRD
+preplace inst kybd_slv_0 -pg 1 -lvl 4 -x 1130 -y 110 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1130 -y 320 -defaultsOSRD
+preplace inst slv_0 -pg 1 -lvl 4 -x 1130 -y 830 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -140 240 290 240 650 110 960
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 260 400n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 2 640 90 970
+preplace netloc slv_0_hsync 1 4 1 1270J 780n
+preplace netloc slv_0_vsync 1 4 1 1270J 800n
+preplace netloc slv_0_vga_r 1 4 1 1270J 820n
+preplace netloc slv_0_vga_b 1 4 1 1270J 860n
+preplace netloc slv_0_vga_g 1 4 1 1270J 840n
+preplace netloc reset_rtl_1 1 0 3 NJ 810 N 810 NJ
+preplace netloc sys_clock_1 1 0 3 NJ 830 N 830 NJ
+preplace netloc clk_wiz_0_clk_out2 1 3 1 980 80n
+preplace netloc PS2_CLK_1 1 0 4 NJ 100 N 100 NJ 100 NJ
+preplace netloc PS2_DATA_1 1 0 4 NJ 120 N 120 NJ 120 NJ
+preplace netloc kybd_slv_0_PS2_new_sig 1 4 1 NJ 120
+preplace netloc kybd_slv_0_IRQ_I 1 4 1 1270 100n
+preplace netloc slv_0_rgb 1 4 1 1270 880n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 280 180 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 950 280n
+preplace netloc processing_system7_0_DDR 1 1 4 300 440 NJ 440 NJ 440 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 270 460 NJ 460 NJ 460 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 950 60n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 N 300
+levelinfo -pg 1 -160 60 470 800 1130 1290
+pagesize -pg 1 -db -bbox -sgen -290 -20 1410 940
 "
 }
 {

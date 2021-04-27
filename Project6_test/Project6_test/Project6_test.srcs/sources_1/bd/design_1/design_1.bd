@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5C31EE39B50E979",
+      "boundary_crc": "0xE7B3CB51DD55C351",
       "device": "xc7z010clg400-1",
       "name": "design_1",
       "synth_flow_mode": "None",
@@ -22,8 +22,8 @@
       "rst_ps7_0_50M": "",
       "clk_wiz_0": "",
       "kybd_slv_0": "",
-      "slv_0": "",
-      "axi_gpio_0": ""
+      "axi_gpio_0": "",
+      "slv_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -155,6 +155,11 @@
       },
       "ps2": {
         "direction": "O"
+      },
+      "rgb": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
       }
     },
     "components": {
@@ -1320,16 +1325,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -1512,22 +1517,10 @@
           }
         },
         "interface_nets": {
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
-            ]
-          },
           "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
-            ]
-          },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
             ]
           },
           "s00_couplers_to_xbar": {
@@ -1536,16 +1529,22 @@
               "xbar/S00_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
+          "m00_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
+              "M00_AXI",
+              "m00_couplers/M_AXI"
             ]
           },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "m02_couplers_to_ps7_0_axi_periph": {
@@ -1558,6 +1557,12 @@
             "interface_ports": [
               "xbar/M01_AXI",
               "m01_couplers/S_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
             ]
           }
         },
@@ -1604,13 +1609,16 @@
             "value": "80.0"
           },
           "CLKOUT1_JITTER": {
-            "value": "119.348"
+            "value": "143.688"
           },
           "CLKOUT1_PHASE_ERROR": {
             "value": "96.948"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "125.000"
+            "value": "50.000"
+          },
+          "CLKOUT1_USED": {
+            "value": "true"
           },
           "CLKOUT2_JITTER": {
             "value": "143.688"
@@ -1622,7 +1630,7 @@
             "value": "50.000"
           },
           "CLKOUT2_USED": {
-            "value": "true"
+            "value": "false"
           },
           "MMCM_CLKFBOUT_MULT_F": {
             "value": "8.000"
@@ -1631,13 +1639,13 @@
             "value": "8.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "8.000"
+            "value": "20.000"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "20"
+            "value": "1"
           },
           "NUM_OUT_CLKS": {
-            "value": "2"
+            "value": "1"
           },
           "PRIM_IN_FREQ": {
             "value": "125.000"
@@ -1651,10 +1659,6 @@
         "vlnv": "clarkson.edu:user:kybd_slv:1.0",
         "xci_name": "design_1_kybd_slv_0_2"
       },
-      "slv_0": {
-        "vlnv": "clarkson.edu:user:slv:1.0",
-        "xci_name": "design_1_slv_0_0"
-      },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "xci_name": "design_1_axi_gpio_0_0",
@@ -1663,6 +1667,10 @@
             "value": "1"
           }
         }
+      },
+      "slv_0": {
+        "vlnv": "clarkson.edu:user:slv:1.0",
+        "xci_name": "design_1_slv_0_0"
       }
     },
     "interface_nets": {
@@ -1714,9 +1722,9 @@
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
           "kybd_slv_0/s00_axi_aclk",
-          "slv_0/s00_axi_aclk",
           "axi_gpio_0/s_axi_aclk",
-          "ps7_0_axi_periph/M02_ACLK"
+          "ps7_0_axi_periph/M02_ACLK",
+          "slv_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1733,9 +1741,9 @@
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/M01_ARESETN",
           "kybd_slv_0/s00_axi_aresetn",
-          "slv_0/s00_axi_aresetn",
           "axi_gpio_0/s_axi_aresetn",
-          "ps7_0_axi_periph/M02_ARESETN"
+          "ps7_0_axi_periph/M02_ARESETN",
+          "slv_0/s00_axi_aresetn"
         ]
       },
       "slv_0_hsync": {
@@ -1780,15 +1788,9 @@
           "clk_wiz_0/clk_in1"
         ]
       },
-      "clk_wiz_0_clk_out1": {
-        "ports": [
-          "clk_wiz_0/clk_out1",
-          "slv_0/I_CLK_125MHZ"
-        ]
-      },
       "clk_wiz_0_clk_out2": {
         "ports": [
-          "clk_wiz_0/clk_out2",
+          "clk_wiz_0/clk_out1",
           "kybd_slv_0/I_CLK_50MHZ",
           "slv_0/I_CLK_50MHZ"
         ]
@@ -1815,6 +1817,12 @@
         "ports": [
           "kybd_slv_0/IRQ_I",
           "axi_gpio_0/gpio_io_i"
+        ]
+      },
+      "slv_0_rgb": {
+        "ports": [
+          "slv_0/rgb",
+          "rgb"
         ]
       }
     },

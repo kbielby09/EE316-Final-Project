@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: clarkson.edu:user:slv:1.0
--- IP Revision: 31
+-- IP Revision: 42
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,13 +55,13 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_slv_0_0 IS
   PORT (
-    I_CLK_125MHZ : IN STD_LOGIC;
     I_CLK_50MHZ : IN STD_LOGIC;
     hsync : OUT STD_LOGIC;
     vsync : OUT STD_LOGIC;
     vga_r : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     vga_g : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     vga_b : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    rgb : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -95,13 +95,13 @@ ARCHITECTURE design_1_slv_0_0_arch OF design_1_slv_0_0 IS
       C_S00_AXI_ADDR_WIDTH : INTEGER -- Width of S_AXI address bus
     );
     PORT (
-      I_CLK_125MHZ : IN STD_LOGIC;
       I_CLK_50MHZ : IN STD_LOGIC;
       hsync : OUT STD_LOGIC;
       vsync : OUT STD_LOGIC;
       vga_r : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       vga_g : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       vga_b : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      rgb : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -163,13 +163,13 @@ BEGIN
       C_S00_AXI_ADDR_WIDTH => 32
     )
     PORT MAP (
-      I_CLK_125MHZ => I_CLK_125MHZ,
       I_CLK_50MHZ => I_CLK_50MHZ,
       hsync => hsync,
       vsync => vsync,
       vga_r => vga_r,
       vga_g => vga_g,
       vga_b => vga_b,
+      rgb => rgb,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

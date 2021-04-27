@@ -271,6 +271,18 @@ set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.08
 current_instance
 set_property src_info {type:XDC file:3 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]; #IO_L13P_T2_MRCC_35 Sch=sysclk
+set_property src_info {type:XDC file:3 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L15   IOSTANDARD LVCMOS33 } [get_ports { rgb[0] }]; #IO_L22N_T3_AD7N_35 Sch=led0_b
+set_property src_info {type:XDC file:3 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { rgb[1] }]; #IO_L16P_T2_35 Sch=led0_g
+set_property src_info {type:XDC file:3 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { rgb[2] }]; #IO_L21P_T3_DQS_AD14P_35 Sch=led0_r
+set_property src_info {type:XDC file:3 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { rgb[3] }]; #IO_0_35 Sch=led1_b
+set_property src_info {type:XDC file:3 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L14   IOSTANDARD LVCMOS33 } [get_ports { rgb[4] }]; #IO_L22P_T3_AD7P_35 Sch=led1_g
+set_property src_info {type:XDC file:3 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M15   IOSTANDARD LVCMOS33 } [get_ports { rgb[5] }]; #IO_L23N_T3_35 Sch=led1_r
 set_property src_info {type:XDC file:3 line:19 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D20   IOSTANDARD LVCMOS33 } [get_ports { reset_rtl }]; #IO_L4N_T0_35 Sch=btn[0]
 set_property src_info {type:XDC file:3 line:23 export:INPUT save:INPUT read:READ} [current_design]

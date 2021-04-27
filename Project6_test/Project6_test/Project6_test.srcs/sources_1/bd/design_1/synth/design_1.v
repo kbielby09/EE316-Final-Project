@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Apr 23 13:42:39 2021
+//Date        : Tue Apr 27 08:33:22 2021
 //Host        : C195-UL-41 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -37,6 +37,7 @@ module design_1
     hsync,
     ps2,
     reset_rtl,
+    rgb,
     sys_clock,
     vga_b,
     vga_g,
@@ -68,6 +69,7 @@ module design_1
   output hsync;
   output ps2;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
+  output [5:0]rgb;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 125000000, INSERT_VIP 0, PHASE 0.000" *) input sys_clock;
   output [3:0]vga_b;
   output [3:0]vga_g;
@@ -76,7 +78,6 @@ module design_1
 
   wire PS2_CLK_1;
   wire PS2_DATA_1;
-  wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
   wire kybd_slv_0_IRQ_I;
   wire kybd_slv_0_PS2_new_sig;
@@ -199,6 +200,7 @@ module design_1
   wire reset_rtl_1;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
   wire slv_0_hsync;
+  wire [5:0]slv_0_rgb;
   wire [3:0]slv_0_vga_b;
   wire [3:0]slv_0_vga_g;
   wire [3:0]slv_0_vga_r;
@@ -210,6 +212,7 @@ module design_1
   assign hsync = slv_0_hsync;
   assign ps2 = kybd_slv_0_PS2_new_sig;
   assign reset_rtl_1 = reset_rtl;
+  assign rgb[5:0] = slv_0_rgb;
   assign sys_clock_1 = sys_clock;
   assign vga_b[3:0] = slv_0_vga_b;
   assign vga_g[3:0] = slv_0_vga_g;
@@ -238,8 +241,7 @@ module design_1
         .s_axi_wvalid(ps7_0_axi_periph_M02_AXI_WVALID));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clock_1),
-        .clk_out1(clk_wiz_0_clk_out1),
-        .clk_out2(clk_wiz_0_clk_out2),
+        .clk_out1(clk_wiz_0_clk_out2),
         .reset(reset_rtl_1));
   design_1_kybd_slv_0_2 kybd_slv_0
        (.IRQ_I(kybd_slv_0_IRQ_I),
@@ -444,9 +446,9 @@ module design_1
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   design_1_slv_0_0 slv_0
-       (.I_CLK_125MHZ(clk_wiz_0_clk_out1),
-        .I_CLK_50MHZ(clk_wiz_0_clk_out2),
+       (.I_CLK_50MHZ(clk_wiz_0_clk_out2),
         .hsync(slv_0_hsync),
+        .rgb(slv_0_rgb),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR),
         .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),

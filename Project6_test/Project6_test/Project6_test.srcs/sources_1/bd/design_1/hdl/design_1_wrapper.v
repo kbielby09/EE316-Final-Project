@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Apr 23 13:42:39 2021
+//Date        : Tue Apr 27 08:33:22 2021
 //Host        : C195-UL-41 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -36,6 +36,7 @@ module design_1_wrapper
     hsync,
     ps2,
     reset_rtl,
+    rgb,
     sys_clock,
     vga_b,
     vga_g,
@@ -67,6 +68,7 @@ module design_1_wrapper
   output hsync;
   output ps2;
   input reset_rtl;
+  output [5:0]rgb;
   input sys_clock;
   output [3:0]vga_b;
   output [3:0]vga_g;
@@ -99,6 +101,7 @@ module design_1_wrapper
   wire hsync;
   wire ps2;
   wire reset_rtl;
+  wire [5:0]rgb;
   wire sys_clock;
   wire [3:0]vga_b;
   wire [3:0]vga_g;
@@ -132,6 +135,7 @@ module design_1_wrapper
         .hsync(hsync),
         .ps2(ps2),
         .reset_rtl(reset_rtl),
+        .rgb(rgb),
         .sys_clock(sys_clock),
         .vga_b(vga_b),
         .vga_g(vga_g),

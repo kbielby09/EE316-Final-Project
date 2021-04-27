@@ -69,6 +69,10 @@ bool ctrlRight = false;
 bool shiftRight = false;
 bool shiftLeft = false;
 bool caps = true;
+int row = 0;
+int column = 0;
+
+void delayMs(int n);
 
 void ready(int scancode);
 bool newCode(int scancode);
@@ -90,18 +94,50 @@ int main()
 
 	while(1){
 		// read data from the keyboard
+		u32 data;
+
+		var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
 
 		if(XGpio_DiscreteRead(&gpioInstance, 1) > 0){
-			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
-			printf("var: %x \n", var);
+			column++;
+
+
+//			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
+//			printf("var: %x \n", var);
 
 			// send var to scancode2ascii
 			unsigned char result = translate(var);
+
+			if(column < 80){
+				// add column to sent data
+//				result = result | (column << 16);
+			}
+			else{
+				row++;
+				column = 0;
+			}
+
+			if(row < 40){
+				// add row to sent data
+//				result = result | (row << 8);
+			}
+			else{
+				row = 0;
+			}
+
+
+
+			// add row and column to sent axi data
+			data = result | (column << 16) | (row << 8);
+
 			// write data to the display
-//			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, result);
+			printf("row %d, column  %d\n", row, column);
+			printf("result %x\n", result);
+			printf("data: %x\n", data);
+			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, data);
+			delayMs(700);
 		}
 	}
-   printf("Hola Mundo\n");
     return 0;
 }
 
@@ -133,7 +169,7 @@ bool newCode(int scancode) {
 }
 
 unsigned char translate(int scancode){
-	printf("CAPS: %d\n", caps);
+//	printf("CAPS: %d\n", caps);
 
 	breakFlag = false;
 	e0Code = false;
@@ -734,5 +770,13 @@ unsigned char translate(int scancode){
 	printf("Ascii: %c\n", ascii);
 	printf("Ascii Hex: %x\n", ascii);
 	return ascii;
+}
+
+void delayMs(int n){
+	int i;
+	int j;
+
+	for(i = 0; i < n; i++)
+		for(j = 0; j < 7000; j++) {}
 }
 

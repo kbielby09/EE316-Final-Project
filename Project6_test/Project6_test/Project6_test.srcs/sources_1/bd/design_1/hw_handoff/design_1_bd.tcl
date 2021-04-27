@@ -170,6 +170,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
  ] $reset_rtl
+  set rgb [ create_bd_port -dir O -from 5 -to 0 rgb ]
   set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
   set_property -dict [ list \
    CONFIG.FREQ_HZ {125000000} \
@@ -189,18 +190,19 @@ proc create_root_design { parentCell } {
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKIN1_JITTER_PS {80.0} \
-   CONFIG.CLKOUT1_JITTER {119.348} \
+   CONFIG.CLKOUT1_JITTER {143.688} \
    CONFIG.CLKOUT1_PHASE_ERROR {96.948} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125.000} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} \
+   CONFIG.CLKOUT1_USED {true} \
    CONFIG.CLKOUT2_JITTER {143.688} \
    CONFIG.CLKOUT2_PHASE_ERROR {96.948} \
    CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} \
-   CONFIG.CLKOUT2_USED {true} \
+   CONFIG.CLKOUT2_USED {false} \
    CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
    CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {20} \
-   CONFIG.NUM_OUT_CLKS {2} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {1} \
+   CONFIG.NUM_OUT_CLKS {1} \
    CONFIG.PRIM_IN_FREQ {125.000} \
    CONFIG.USE_LOCKED {false} \
  ] $clk_wiz_0
@@ -694,8 +696,7 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net PS2_CLK_1 [get_bd_ports PS2_CLK] [get_bd_pins kybd_slv_0/PS2_CLK]
   connect_bd_net -net PS2_DATA_1 [get_bd_ports PS2_DATA] [get_bd_pins kybd_slv_0/PS2_DATA]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins slv_0/I_CLK_125MHZ]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins kybd_slv_0/I_CLK_50MHZ] [get_bd_pins slv_0/I_CLK_50MHZ]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins kybd_slv_0/I_CLK_50MHZ] [get_bd_pins slv_0/I_CLK_50MHZ]
   connect_bd_net -net kybd_slv_0_IRQ_I [get_bd_pins axi_gpio_0/gpio_io_i] [get_bd_pins kybd_slv_0/IRQ_I]
   connect_bd_net -net kybd_slv_0_PS2_new_sig [get_bd_ports ps2] [get_bd_pins kybd_slv_0/PS2_new_sig]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins kybd_slv_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk] [get_bd_pins slv_0/s00_axi_aclk]
@@ -703,6 +704,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins kybd_slv_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn] [get_bd_pins slv_0/s00_axi_aresetn]
   connect_bd_net -net slv_0_hsync [get_bd_ports hsync] [get_bd_pins slv_0/hsync]
+  connect_bd_net -net slv_0_rgb [get_bd_ports rgb] [get_bd_pins slv_0/rgb]
   connect_bd_net -net slv_0_vga_b [get_bd_ports vga_b] [get_bd_pins slv_0/vga_b]
   connect_bd_net -net slv_0_vga_g [get_bd_ports vga_g] [get_bd_pins slv_0/vga_g]
   connect_bd_net -net slv_0_vga_r [get_bd_ports vga_r] [get_bd_pins slv_0/vga_r]

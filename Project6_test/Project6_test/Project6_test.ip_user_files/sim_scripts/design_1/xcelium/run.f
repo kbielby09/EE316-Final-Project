@@ -35,11 +35,11 @@
   "../../../bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/sim/blk_mem_gen_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/ee60/src/ascii_writer.vhd" \
-  "../../../bd/design_1/ipshared/ee60/src/char8x12_lookup_table.vhd" \
-  "../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0_S00_AXI.vhd" \
-  "../../../bd/design_1/ipshared/ee60/src/vga_sync.vhd" \
-  "../../../bd/design_1/ipshared/ee60/hdl/slv_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/7127/src/ascii_writer.vhd" \
+  "../../../bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd" \
+  "../../../bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd" \
+  "../../../bd/design_1/ipshared/7127/src/vga_sync.vhd" \
+  "../../../bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_slv_0_0/sim/design_1_slv_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
@@ -85,6 +85,18 @@
   "../../../bd/design_1/ipshared/78d9/src/ps2_keyboard.vhd" \
   "../../../bd/design_1/ipshared/78d9/hdl/kybd_slv_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_kybd_slv_0_2/sim/design_1_kybd_slv_0_2.vhd" \
+-endlib
+-makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/interrupt_control_v3_1_4 \
+  "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_gpio_v2_0_21 \
+  "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
