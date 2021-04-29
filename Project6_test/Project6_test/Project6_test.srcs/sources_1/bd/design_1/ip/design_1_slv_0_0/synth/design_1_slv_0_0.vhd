@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: clarkson.edu:user:slv:1.0
--- IP Revision: 42
+-- IP Revision: 45
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

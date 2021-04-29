@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Apr 27 08:31:05 2021
+//Date        : Wed Apr 28 22:48:03 2021
 //Host        : C195-UL-41 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -78,7 +78,6 @@ module design_1
 
   wire PS2_CLK_1;
   wire PS2_DATA_1;
-  wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
   wire kybd_slv_0_IRQ_I;
   wire kybd_slv_0_PS2_new_sig;
@@ -242,8 +241,7 @@ module design_1
         .s_axi_wvalid(ps7_0_axi_periph_M02_AXI_WVALID));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clock_1),
-        .clk_out1(clk_wiz_0_clk_out1),
-        .clk_out2(clk_wiz_0_clk_out2),
+        .clk_out1(clk_wiz_0_clk_out2),
         .reset(reset_rtl_1));
   design_1_kybd_slv_0_2 kybd_slv_0
        (.IRQ_I(kybd_slv_0_IRQ_I),

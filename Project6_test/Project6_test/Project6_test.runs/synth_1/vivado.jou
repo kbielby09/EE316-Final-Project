@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 27 14:21:02 2021
-# Process ID: 2132
-# Current directory: C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1
+# Start of session at: Wed Apr 28 22:48:38 2021
+# Process ID: 109872
+# Current directory: C:/Project6_test/Project6_test/Project6_test.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.vds
-# Journal file: C:/EE316-Final-Project/Project6_test/Project6_test/Project6_test.runs/synth_1\vivado.jou
+# Log file: C:/Project6_test/Project6_test/Project6_test.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Project6_test/Project6_test/Project6_test.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

@@ -1,9 +1,9 @@
 vhdl xil_defaultlib  \
-"../../../bd/design_1/ipshared/7127/src/ascii_writer.vhd" \
-"../../../bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd" \
-"../../../bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/7127/src/vga_sync.vhd" \
-"../../../bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/ascii_writer.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/char8x12_lookup_table.vhd" \
+"../../../bd/design_1/ipshared/fd67/hdl/slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/vga_sync.vhd" \
+"../../../bd/design_1/ipshared/fd67/hdl/slv_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_slv_0_0/sim/design_1_slv_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
 "../../../bd/design_1/ipshared/78d9/src/debounce.vhd" \

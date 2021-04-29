@@ -76,11 +76,11 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../Project6_test.srcs/sour
 "../../../bd/design_1/ip/design_1_slv_0_0/src/blk_mem_gen_0_2/sim/blk_mem_gen_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/design_1/ipshared/7127/src/ascii_writer.vhd" \
-"../../../bd/design_1/ipshared/7127/src/char8x12_lookup_table.vhd" \
-"../../../bd/design_1/ipshared/7127/hdl/slv_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/7127/src/vga_sync.vhd" \
-"../../../bd/design_1/ipshared/7127/hdl/slv_v1_0.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/ascii_writer.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/char8x12_lookup_table.vhd" \
+"../../../bd/design_1/ipshared/fd67/hdl/slv_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/fd67/src/vga_sync.vhd" \
+"../../../bd/design_1/ipshared/fd67/hdl/slv_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_slv_0_0/sim/design_1_slv_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 -incr "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../Project6_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \

@@ -1,6 +1,69 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 28 22:47:59 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_slv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_slv_0_0 (clarkson.edu:user:slv:1.0) from (Rev. 44) to (Rev. 45)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 28 22:25:33 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_slv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_slv_0_0 (clarkson.edu:user:slv:1.0) from (Rev. 43) to (Rev. 44)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 28 21:40:42 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_slv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_slv_0_0 (clarkson.edu:user:slv:1.0) from (Rev. 42) to (Rev. 43)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 | Date         : Tue Apr 27 08:30:59 2021
 | Host         : C195-UL-41 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

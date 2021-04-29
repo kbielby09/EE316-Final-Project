@@ -59,6 +59,13 @@
 #include "xil_io.h"
 #include <stdbool.h>
 
+#define F0_BREAK_CODE 0xF0
+#define E0_BREAK_CODE 0xE0
+#define BACKSPACE 0x66
+
+#define L_SHIFT 0x12
+#define R_SHIFT 0x59
+
 // GPIO instance
 XGpio gpioInstance;
 
@@ -96,70 +103,107 @@ int main()
 		// read data from the keyboard
 		u32 data;
 
-		var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
-
 		if(XGpio_DiscreteRead(&gpioInstance, 1) > 0){
-			column++;
 
-
-//			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
-//			printf("var: %x \n", var);
+			var = KYBD_SLV_mReadReg(XPAR_KYBD_SLV_0_S00_AXI_BASEADDR, 0);
 
 			// send var to scancode2ascii
-			unsigned char result = translate(var);
+//			bool nulvar = newCode(var);
 
-			if(column < 80){
-				// add column to sent data
-//				result = result | (column << 16);
+			if(var == F0_BREAK_CODE){
+				breakFlag = true;
+				continue;
 			}
-			else{
-				row++;
-				column = 0;
+			else if(var == E0_BREAK_CODE) {
+				breakFlag = true;
+				continue;
+			}
+			else if(breakFlag == true && (var != F0_BREAK_CODE || var != E0_BREAK_CODE)) {
+				breakFlag = false;
+				// check for shift pressed
+				if(var == R_SHIFT) {
+					shiftRight = false;
+				}
+				else if(var == L_SHIFT) {
+					shiftLeft = false;
+				}
+				continue;
+			}
+			else if(breakFlag == false && (var != F0_BREAK_CODE || var != E0_BREAK_CODE)){
+				// Check for Shift presses
+				if(var == L_SHIFT) {
+					shiftLeft = true;
+					continue;
+				}
+				else if(var == R_SHIFT) {
+					shiftRight = true;
+					continue;
+				}
+
+				unsigned char result;
+
+				if(var != BACKSPACE){
+					result = translate(var);
+					data = result | (column << 16) | (row << 8);
+
+					// write data to the display
+					SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, data);
+					column++;
+				}
+				else if(var == BACKSPACE){
+					result = translate(0x29);
+					column--;
+
+					data = result | (column << 16) | (row << 8);
+
+					// write data to the display
+					SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, data);
+				}
+
+				if(column > 79){
+					row++;
+					column = 0;
+				}
+
+				if(row > 39){
+					row = 0;
+				}
+
+				// add row and column to sent axi data
+
+
+
 			}
 
-			if(row < 40){
-				// add row to sent data
-//				result = result | (row << 8);
+			while(XGpio_DiscreteRead(&gpioInstance, 1) > 0){
+				printf("IRQ not reset\n");
 			}
-			else{
-				row = 0;
-			}
-
-
-
-			// add row and column to sent axi data
-			data = result | (column << 16) | (row << 8);
-
-			// write data to the display
-			printf("row %d, column  %d\n", row, column);
-			printf("result %x\n", result);
-			printf("data: %x\n", data);
-			SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, data);
-			delayMs(700);
 		}
 	}
     return 0;
 }
 
-void ready(int scancode) {
-	if(prevScanFlag == false && newScanFlag == true) {
-	 	asciiNew = false;
-		newCode(scancode);
-	}
-	else{
-		ready(scancode);
-	}
-}
+//void ready(int scancode) {
+//	bool nullBool;
+//	if(prevScanFlag == false && newScanFlag == true) {
+//	 	asciiNew = false;
+//	 	nullBool = newCode(scancode);
+//	}
+//	else{
+//		ready(scancode);
+//	}
+//}
 
 bool newCode(int scancode) {
+	printf("newcode \n");
 	if(scancode == 0xF0) {
+		printf("make code\n");
 		breakFlag = true;
-		ready(scancode);
 		return breakFlag;
 	}
 	else if(scancode == 0xE0) {
+		printf("ecode\n");
 		e0Code = true;
-		ready(scancode);
 		return e0Code;
 	}
 	else {
@@ -169,65 +213,73 @@ bool newCode(int scancode) {
 }
 
 unsigned char translate(int scancode){
-	breakFlag = false;
-	e0Code = false;
+	printf(": %d\n", caps);
+	printf("breakflag: %d\n", breakFlag);
+
+//	breakFlag = false;
+//	e0Code = false;
+//	shiftLeft = false;
 
 	switch(scancode) {
-		//caps mode
-		case 0x58 :
-			if(breakFlag == false) {
-				caps = ! caps;
-			}
-			break;
-		//code for ctrl keys
-		case 0x14 :
-			// ctrl right code
-			if(e0Code == true) {
-//				ctrlRight = ! breakFlag;
-				while(breakFlag == false) {
-					ctrlRight = true;
+	//caps mode
+			case 0x58 :
+				if(breakFlag == false) {
+					caps = ! caps;
 				}
-				ctrlRight = false;
-			}
-			// ctrl left code
-			else {
-//				ctrlLeft = ! breakFlag;
-				while(breakFlag == false) {
-					ctrlLeft = true;
+				break;
+			//code for ctrl keys
+			case 0x14 :
+				// ctrl right code
+				if(e0Code == true) {
+					ctrlRight = ! breakFlag;
+//					while(breakFlag == false) {
+//						ctrlRight = true;
+//						break;
+//					}
+//					ctrlRight = false;
 				}
-				ctrlLeft = false;
-			}
-			break;
-		// shift left code
-		case 0x12 :
-			//shiftLeft = ! breakFlag;
-//			if(breakFlag == false){
-//				shiftLeft = true;
-//			}
-//			else {
+				// ctrl left code
+				else {
+					ctrlLeft = ! breakFlag;
+//					while(breakFlag == false) {
+//						ctrlLeft = true;
+//						break;
+//					}
+//					ctrlLeft = false;
+				}
+				break;
+			// shift left code
+			case 0x12 :
+//				shiftLeft = ! breakFlag;
+//				if(breakFlag == false){
+//					shiftLeft = true;
+//				}
+//				else {
+//					shiftLeft = false;
+//				}
+//				while(breakFlag == false) {
+//					shiftLeft = true;
+//					break;
+//				}
 //				shiftLeft = false;
-//			}
-			while(breakFlag == false) {
-				shiftLeft = true;
-			}
-			shiftLeft = false;
-			break;
+				break;
 
-		// shift right code
-		case 0x59 :
-			//shiftRight = ! breakFlag;
-//			if(breakFlag == false) {
-//				shiftRight = true;
-//			}
-//			else {
+			// shift right code
+			case 0x59 :
+//				shiftRight = ! breakFlag;
+	//			if(breakFlag == false) {
+	//				shiftRight = true;
+	//			}
+	//			else {
+	//				shiftRight = false;
+	//			}
+//				while(breakFlag == false) {
+//					shiftRight = true;
+//					break;
+//				}
 //				shiftRight = false;
-//			}
-			while(breakFlag == false) {
-				shiftRight = true;
-			}
-			shiftRight = false;
-			break;
-	}
+				break;
+		}
 
 	//control codes
 	if(ctrlLeft == true || ctrlRight == true) {
@@ -374,7 +426,7 @@ unsigned char translate(int scancode){
 				break;
 			//backspace
 			case 0x66 :
-				ascii = 0x08;
+//				ascii = 0x08;
 				break;
 			//tab
 			case 0x0D :
@@ -795,7 +847,7 @@ unsigned char translate(int scancode){
 		}
 	}
 	printf("Ascii: %c\n", ascii);
-	printf("Ascii Hex: %x\n", ascii);
+//	printf("Ascii Hex: %x\n", ascii);
 	return ascii;
 }
 
