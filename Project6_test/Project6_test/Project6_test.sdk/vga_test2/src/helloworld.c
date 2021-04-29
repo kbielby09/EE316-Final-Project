@@ -118,7 +118,8 @@ int main()
 			}
 			else if(var == E0_BREAK_CODE) {
 				e0Code = true;
-				breakFlag = true;
+				printf("e0Code set\n");
+//				breakFlag = true;
 				continue;
 			}
 			else if(breakFlag == true && (var != F0_BREAK_CODE && var != E0_BREAK_CODE)) {
@@ -133,21 +134,19 @@ int main()
 				}
 
 				// check for ctrl pressed
-				if(var == CTRL) {
-					ctrlRight = true;
+				if(var == CTRL && e0Code == false) {
+					ctrlLeft = false;
+				}
+
+				if(var == CTRL && e0Code == true){
+					ctrlRight = false;
 				}
 
 				continue;
 			}
-			else if(breakFlag == true && e0Code == true && var != F0_BREAK_CODE && var != E0_BREAK_CODE){
-				breakFlag = false;
+			else if(breakFlag == false && var != F0_BREAK_CODE && var != E0_BREAK_CODE){
 
-				if(var == CTRL){
-					ctrlLeft = true;
-				}
-			}
-			else if(breakFlag == false && (var != F0_BREAK_CODE || var != E0_BREAK_CODE)){
-				e0Code = false;
+//				e0Code = false;
 
 				// Check for Shift presses
 				if(var == L_SHIFT) {
@@ -159,11 +158,172 @@ int main()
 					continue;
 				}
 
+
 				unsigned char result;
 
 				if(var != BACKSPACE){
-					result = translate(var);
-					data = result | (column << 16) | (row << 8);
+					if(var == CTRL && e0Code == false) {
+						printf("here\n");
+						ctrlLeft = true;
+						continue;
+					}
+					else if(var == CTRL && e0Code == true){
+						ctrlRight = true;
+//						e0Code = false;
+						printf("ctrlRight %d\n", ctrlRight);
+						continue;
+					}
+					else{
+						if(ctrlLeft == true || ctrlRight == true){
+							printf("ctrl on\n");
+							switch(var) {
+							//^@ NUL
+							case 0x1E :
+								printf("hello2\n");
+								ascii = 0x00;
+								break;
+								//^A SOH
+							case 0x1C :
+								ascii = 0x01;
+								break;
+								//^B STX
+							case 0x32 :
+								ascii = 0x02;
+								break;
+								//^C ETX
+							case 0x21 :
+								ascii = 0x03;
+								break;
+								//^D EOT
+							case 0x23 :
+								ascii = 0x04;
+								break;
+								//^E ENQ
+							case 0x24 :
+								ascii = 0x05;
+								break;
+								//^F ACK
+							case 0x2B :
+								ascii = 0x06;
+								break;
+								//^G BEL
+							case 0x34 :
+								ascii = 0x07;
+								break;
+								//^H BS
+							case 0x33 :
+								ascii = 0x08;
+								break;
+								//^I HT
+							case 0x43 :
+								ascii = 0x09;
+								break;
+								//^J LF
+							case 0x3B :
+								ascii = 0x0A;
+								break;
+								//^K VT
+							case 0x42 :
+								ascii = 0x0B;
+								break;
+								//^L FF
+							case 0x4B :
+								ascii = 0x0C;
+								break;
+								//^M CR
+							case 0x3A :
+								ascii = 0x0D;
+								break;
+								//^N SO
+							case 0x31 :
+								ascii = 0x0E;
+								break;
+								//^O SI
+							case 0x44 :
+								ascii = 0x0F;
+								break;
+								//^P DLE
+							case 0x4D :
+								ascii = 0x10;
+								break;
+								//^Q DC1
+							case 0x15 :
+								ascii = 0x11;
+								break;
+								//^R DC2
+							case 0x2D :
+								ascii = 0x12;
+								break;
+								//^S DC3
+							case 0x1B :
+								ascii = 0x13;
+								break;
+								//^T DC4
+							case 0x2C :
+								ascii = 0x14;
+								break;
+								//^U NAK
+							case 0x3C :
+								ascii = 0x15;
+								break;
+								//^V SYN
+							case 0x2A :
+								ascii = 0x16;
+								break;
+								//^W ETB
+							case 0x1D :
+								ascii = 0x17;
+								break;
+								//^X CAN
+							case 0x22 :
+								ascii = 0x18;
+								break;
+								//^Y EM
+							case 0x35 :
+								ascii = 0x19;
+								break;
+								//^Z SUB
+							case 0x1A :
+								ascii = 0x1A;
+								break;
+								//^[ ESC
+							case 0x54 :
+								ascii = 0x1B;
+								break;
+								//^\ FS
+							case 0x5D :
+								ascii = 0x1C;
+								break;
+								//^] GS
+							case 0x5B :
+								ascii = 0x1D;
+								break;
+								//^^ RS
+							case 0x36 :
+								ascii = 0x1E;
+								break;
+								//^_ US
+							case 0x4E :
+								ascii = 0x1F;
+								break;
+								//^? DEL
+							case 0x4A :
+								ascii = 0x7F;
+								break;
+							}
+							printf("hello4\n");
+							data = ascii | (column << 16) | (row << 8);
+
+						}
+						else {
+							printf("hello6\n");
+
+							result = translate(var);
+							data = result | (column << 16) | (row << 8);
+						}
+					}
+
+
 
 					// write data to the display
 					SLV_mWriteReg(XPAR_SLV_0_S00_AXI_BASEADDR, 0, data);
@@ -194,6 +354,7 @@ int main()
 				}
 
 				// add row and column to sent axi data
+
 
 
 
@@ -307,140 +468,141 @@ unsigned char translate(int scancode){
 
 	//control codes
 	if(ctrlLeft == true || ctrlRight == true) {
-		switch(scancode) {
-			//^@ NUL
-			case 0x1E :
-				ascii = 0x00;
-				break;
-			//^A SOH
-			case 0x1C :
-				ascii = 0x01;
-				break;
-			//^B STX
-			case 0x32 :
-				ascii = 0x02;
-				break;
-			//^C ETX
-			case 0x21 :
-				ascii = 0x03;
-				break;
-			//^D EOT
-			case 0x23 :
-				ascii = 0x04;
-				break;
-			//^E ENQ
-			case 0x24 :
-				ascii = 0x05;
-				break;
-			//^F ACK
-			case 0x2B :
-				ascii = 0x06;
-				break;
-			//^G BEL
-			case 0x34 :
-				ascii = 0x07;
-				break;
-			//^H BS
-			case 0x33 :
-				ascii = 0x08;
-				break;
-			//^I HT
-			case 0x43 :
-				ascii = 0x09;
-				break;
-			//^J LF
-			case 0x3B :
-				ascii = 0x0A;
-				break;
-			//^K VT
-			case 0x42 :
-				ascii = 0x0B;
-				break;
-			//^L FF
-			case 0x4B :
-				ascii = 0x0C;
-				break;
-			//^M CR
-			case 0x3A :
-				ascii = 0x0D;
-				break;
-			//^N SO
-			case 0x31 :
-				ascii = 0x0E;
-				break;
-			//^O SI
-			case 0x44 :
-				ascii = 0x0F;
-				break;
-			//^P DLE
-			case 0x4D :
-				ascii = 0x10;
-				break;
-			//^Q DC1
-			case 0x15 :
-				ascii = 0x11;
-				break;
-			//^R DC2
-			case 0x2D :
-				ascii = 0x12;
-				break;
-			//^S DC3
-			case 0x1B :
-				ascii = 0x13;
-				break;
-			//^T DC4
-			case 0x2C :
-				ascii = 0x14;
-				break;
-			//^U NAK
-			case 0x3C :
-				ascii = 0x15;
-				break;
-			//^V SYN
-			case 0x2A :
-				ascii = 0x16;
-				break;
-			//^W ETB
-			case 0x1D :
-				ascii = 0x17;
-				break;
-			//^X CAN
-			case 0x22 :
-				ascii = 0x18;
-				break;
-			//^Y EM
-			case 0x35 :
-				ascii = 0x19;
-				break;
-			//^Z SUB
-			case 0x1A :
-				ascii = 0x1A;
-				break;
-			//^[ ESC
-			case 0x54 :
-				ascii = 0x1B;
-				break;
-			//^\ FS
-			case 0x5D :
-				ascii = 0x1C;
-				break;
-			//^] GS
-			case 0x5B :
-				ascii = 0x1D;
-				break;
-			//^^ RS
-			case 0x36 :
-				ascii = 0x1E;
-				break;
-			//^_ US
-			case 0x4E :
-				ascii = 0x1F;
-				break;
-			//^? DEL
-			case 0x4A :
-				ascii = 0x7F;
-				break;
-		}
+//		switch(scancode) {
+//			//^@ NUL
+//			case 0x1E :
+//				printf("hello2\n");
+//				ascii = 0x00;
+//				break;
+//			//^A SOH
+//			case 0x1C :
+//				ascii = 0x01;
+//				break;
+//			//^B STX
+//			case 0x32 :
+//				ascii = 0x02;
+//				break;
+//			//^C ETX
+//			case 0x21 :
+//				ascii = 0x03;
+//				break;
+//			//^D EOT
+//			case 0x23 :
+//				ascii = 0x04;
+//				break;
+//			//^E ENQ
+//			case 0x24 :
+//				ascii = 0x05;
+//				break;
+//			//^F ACK
+//			case 0x2B :
+//				ascii = 0x06;
+//				break;
+//			//^G BEL
+//			case 0x34 :
+//				ascii = 0x07;
+//				break;
+//			//^H BS
+//			case 0x33 :
+//				ascii = 0x08;
+//				break;
+//			//^I HT
+//			case 0x43 :
+//				ascii = 0x09;
+//				break;
+//			//^J LF
+//			case 0x3B :
+//				ascii = 0x0A;
+//				break;
+//			//^K VT
+//			case 0x42 :
+//				ascii = 0x0B;
+//				break;
+//			//^L FF
+//			case 0x4B :
+//				ascii = 0x0C;
+//				break;
+//			//^M CR
+//			case 0x3A :
+//				ascii = 0x0D;
+//				break;
+//			//^N SO
+//			case 0x31 :
+//				ascii = 0x0E;
+//				break;
+//			//^O SI
+//			case 0x44 :
+//				ascii = 0x0F;
+//				break;
+//			//^P DLE
+//			case 0x4D :
+//				ascii = 0x10;
+//				break;
+//			//^Q DC1
+//			case 0x15 :
+//				ascii = 0x11;
+//				break;
+//			//^R DC2
+//			case 0x2D :
+//				ascii = 0x12;
+//				break;
+//			//^S DC3
+//			case 0x1B :
+//				ascii = 0x13;
+//				break;
+//			//^T DC4
+//			case 0x2C :
+//				ascii = 0x14;
+//				break;
+//			//^U NAK
+//			case 0x3C :
+//				ascii = 0x15;
+//				break;
+//			//^V SYN
+//			case 0x2A :
+//				ascii = 0x16;
+//				break;
+//			//^W ETB
+//			case 0x1D :
+//				ascii = 0x17;
+//				break;
+//			//^X CAN
+//			case 0x22 :
+//				ascii = 0x18;
+//				break;
+//			//^Y EM
+//			case 0x35 :
+//				ascii = 0x19;
+//				break;
+//			//^Z SUB
+//			case 0x1A :
+//				ascii = 0x1A;
+//				break;
+//			//^[ ESC
+//			case 0x54 :
+//				ascii = 0x1B;
+//				break;
+//			//^\ FS
+//			case 0x5D :
+//				ascii = 0x1C;
+//				break;
+//			//^] GS
+//			case 0x5B :
+//				ascii = 0x1D;
+//				break;
+//			//^^ RS
+//			case 0x36 :
+//				ascii = 0x1E;
+//				break;
+//			//^_ US
+//			case 0x4E :
+//				ascii = 0x1F;
+//				break;
+//			//^? DEL
+//			case 0x4A :
+//				ascii = 0x7F;
+//				break;
+//		}
 	}
 	else {
 		switch(scancode) {
@@ -794,6 +956,7 @@ unsigned char translate(int scancode){
 				break;
 			//2
 			case 0x1E :
+				printf("hello3\n");
 				ascii = 0x32;
 				break;
 			//3
