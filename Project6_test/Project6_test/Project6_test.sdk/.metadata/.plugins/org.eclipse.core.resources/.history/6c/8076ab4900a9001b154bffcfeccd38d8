@@ -148,6 +148,8 @@ int main()
 			}
 			else if(breakFlag == false && (var != F0_BREAK_CODE || var != E0_BREAK_CODE)){
 				e0Code = false;
+				ctrlLeft = false;
+				ctrlRight = false;
 
 				// Check for Shift presses
 				if(var == L_SHIFT) {

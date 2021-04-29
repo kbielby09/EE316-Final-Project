@@ -131,24 +131,17 @@ int main()
 				else if(var == L_SHIFT) {
 					shiftLeft = false;
 				}
-
-				// check for ctrl pressed
-				if(var == CTRL) {
-					ctrlRight = true;
-				}
-
 				continue;
 			}
 			else if(breakFlag == true && e0Code == true && var != F0_BREAK_CODE && var != E0_BREAK_CODE){
 				breakFlag = false;
 
-				if(var == CTRL){
-					ctrlLeft = true;
+				if(var == ){
+
 				}
 			}
 			else if(breakFlag == false && (var != F0_BREAK_CODE || var != E0_BREAK_CODE)){
 				e0Code = false;
-
 				// Check for Shift presses
 				if(var == L_SHIFT) {
 					shiftLeft = true;
@@ -191,6 +184,11 @@ int main()
 
 				if(row > 39){
 					row = 0;
+				}
+
+				//check for control keys
+				if() {
+
 				}
 
 				// add row and column to sent axi data
@@ -255,7 +253,7 @@ unsigned char translate(int scancode){
 			case 0x14 :
 				// ctrl right code
 				if(e0Code == true) {
-//					ctrlRight = ! breakFlag;
+					ctrlRight = ! breakFlag;
 //					while(breakFlag == false) {
 //						ctrlRight = true;
 //						break;
@@ -264,7 +262,7 @@ unsigned char translate(int scancode){
 				}
 				// ctrl left code
 				else {
-//					ctrlLeft = ! breakFlag;
+					ctrlLeft = ! breakFlag;
 //					while(breakFlag == false) {
 //						ctrlLeft = true;
 //						break;

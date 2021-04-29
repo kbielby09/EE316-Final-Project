@@ -6990,3 +6990,348 @@ arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
   63896	   2608	  23360	  89864	  15f08	vga_test2.elf
 'Finished building: vga_test2.elf.size'
 ' '
+10:35:07 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:43:48 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2608	  23360	  89928	  15f48	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+10:44:01 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2608	  23360	  89928	  15f48	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+10:44:07 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:45:50 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:46:17 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:46:27 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:46:44 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:56:22 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2608	  23360	  89928	  15f48	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+10:56:35 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2608	  23360	  89928	  15f48	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+10:57:47 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2608	  23360	  89928	  15f48	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:02:34 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:79:13: error: 'flase' undeclared here (not in a function); did you mean 'flsl'?
+ bool caps = flase;
+             ^~~~~
+             flsl
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:02:39 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63960	   2600	  23376	  89936	  15f50	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:02:41 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:17:57 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:181:8: error: expected expression before ')' token
+     if() {
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:18:45 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:182:8: error: expected expression before ')' token
+     if() {
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:24:37 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:15: error: expected expression before ')' token
+     if(var == ){
+               ^
+../src/helloworld.c:190:8: error: expected expression before ')' token
+     if() {
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:25:49 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:190:8: error: expected expression before ')' token
+     if() {
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:27:38 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:8: error: expected expression before ')' token
+     if() {
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:27:55 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64152	   2600	  23376	  90128	  16010	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:28:08 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:28:21 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:28:41 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:28:49 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:30:50 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2600	  23376	  90000	  15f90	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:30:59 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:33:46 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2600	  23376	  90000	  15f90	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:33:49 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:49:18 **** Auto Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_test2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test2_bsp/ps7_cortexa9_0/lib -o "vga_test2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_test2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size vga_test2.elf  |tee "vga_test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2600	  23376	  90000	  15f90	vga_test2.elf
+'Finished building: vga_test2.elf.size'
+' '
+11:49:19 **** Incremental Build of configuration Debug for project vga_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

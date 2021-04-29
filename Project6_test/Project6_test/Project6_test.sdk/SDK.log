@@ -10590,3 +10590,627 @@ con
 ----------------End of Script----------------
 
 10:30:43 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+10:35:09 INFO  : Disconnected from the channel tcfchan#196.
+10:35:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:35:10 INFO  : 'fpga -state' command is executed.
+10:35:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:10 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:35:10 INFO  : 'jtag frequency' command is executed.
+10:35:10 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:35:10 INFO  : Context for 'APU' is selected.
+10:35:10 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:35:10 INFO  : 'configparams force-mem-access 1' command is executed.
+10:35:10 INFO  : Context for 'APU' is selected.
+10:35:10 INFO  : 'stop' command is executed.
+10:35:10 INFO  : 'ps7_init' command is executed.
+10:35:10 INFO  : 'ps7_post_config' command is executed.
+10:35:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:35:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:11 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:35:11 INFO  : 'configparams force-mem-access 0' command is executed.
+10:35:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:35:11 INFO  : Memory regions updated for context APU
+10:35:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:11 INFO  : 'con' command is executed.
+10:35:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+10:35:11 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+10:44:08 INFO  : Disconnected from the channel tcfchan#197.
+10:44:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:44:09 INFO  : 'fpga -state' command is executed.
+10:44:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:44:10 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:44:10 INFO  : 'jtag frequency' command is executed.
+10:44:10 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:44:10 INFO  : Context for 'APU' is selected.
+10:44:10 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:44:10 INFO  : 'configparams force-mem-access 1' command is executed.
+10:44:10 INFO  : Context for 'APU' is selected.
+10:44:10 INFO  : 'stop' command is executed.
+10:44:10 INFO  : 'ps7_init' command is executed.
+10:44:10 INFO  : 'ps7_post_config' command is executed.
+10:44:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:44:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:10 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:44:10 INFO  : 'configparams force-mem-access 0' command is executed.
+10:44:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:44:10 INFO  : Memory regions updated for context APU
+10:44:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:11 INFO  : 'con' command is executed.
+10:44:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+10:44:11 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+10:45:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:45:46 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:45:52 INFO  : Disconnected from the channel tcfchan#198.
+10:45:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:45:53 INFO  : 'fpga -state' command is executed.
+10:45:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:53 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:45:53 INFO  : 'jtag frequency' command is executed.
+10:45:53 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:45:53 INFO  : Context for 'APU' is selected.
+10:45:53 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:45:53 INFO  : 'configparams force-mem-access 1' command is executed.
+10:45:53 INFO  : Context for 'APU' is selected.
+10:45:53 INFO  : 'stop' command is executed.
+10:45:53 INFO  : 'ps7_init' command is executed.
+10:45:53 INFO  : 'ps7_post_config' command is executed.
+10:45:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:45:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:54 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:45:54 INFO  : 'configparams force-mem-access 0' command is executed.
+10:45:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:45:54 INFO  : Memory regions updated for context APU
+10:45:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:54 INFO  : 'con' command is executed.
+10:45:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+10:45:54 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+10:46:19 INFO  : Disconnected from the channel tcfchan#199.
+10:46:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:46:20 INFO  : 'fpga -state' command is executed.
+10:46:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:20 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:46:20 INFO  : 'jtag frequency' command is executed.
+10:46:20 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:20 INFO  : Context for 'APU' is selected.
+10:46:20 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:46:20 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:20 INFO  : Context for 'APU' is selected.
+10:46:20 INFO  : 'stop' command is executed.
+10:46:20 INFO  : 'ps7_init' command is executed.
+10:46:20 INFO  : 'ps7_post_config' command is executed.
+10:46:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:46:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:21 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:21 INFO  : 'configparams force-mem-access 0' command is executed.
+10:46:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:46:21 INFO  : Memory regions updated for context APU
+10:46:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:21 INFO  : 'con' command is executed.
+10:46:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+10:46:21 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+10:46:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:46:25 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:46:28 INFO  : Disconnected from the channel tcfchan#200.
+10:46:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:46:30 INFO  : 'fpga -state' command is executed.
+10:46:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:30 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:46:30 INFO  : 'jtag frequency' command is executed.
+10:46:30 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:30 INFO  : Context for 'APU' is selected.
+10:46:30 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:46:30 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:30 INFO  : Context for 'APU' is selected.
+10:46:30 INFO  : 'stop' command is executed.
+10:46:31 INFO  : 'ps7_init' command is executed.
+10:46:31 INFO  : 'ps7_post_config' command is executed.
+10:46:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:46:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:34 ERROR : Memory write error at 0x100000. AP transaction timeout
+10:46:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+----------------End of Script----------------
+
+10:46:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:46:43 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:46:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+10:46:45 INFO  : 'fpga -state' command is executed.
+10:46:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:45 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+10:46:45 INFO  : 'jtag frequency' command is executed.
+10:46:45 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:46 INFO  : Context for 'APU' is selected.
+10:46:46 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:46:46 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:46 INFO  : Context for 'APU' is selected.
+10:46:46 INFO  : 'stop' command is executed.
+10:46:47 INFO  : 'ps7_init' command is executed.
+10:46:47 INFO  : 'ps7_post_config' command is executed.
+10:46:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:46:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:48 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:48 INFO  : 'configparams force-mem-access 0' command is executed.
+10:46:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:46:48 INFO  : Memory regions updated for context APU
+10:46:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:49 INFO  : 'con' command is executed.
+10:46:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+10:46:49 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:02:43 INFO  : Disconnected from the channel tcfchan#201.
+11:02:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:02:44 INFO  : 'fpga -state' command is executed.
+11:02:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:44 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:02:44 INFO  : 'jtag frequency' command is executed.
+11:02:44 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:02:44 INFO  : Context for 'APU' is selected.
+11:02:44 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:02:44 INFO  : 'configparams force-mem-access 1' command is executed.
+11:02:44 INFO  : Context for 'APU' is selected.
+11:02:44 INFO  : 'stop' command is executed.
+11:02:45 INFO  : 'ps7_init' command is executed.
+11:02:45 INFO  : 'ps7_post_config' command is executed.
+11:02:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:02:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:02:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:02:45 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:02:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:02:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:02:45 INFO  : Memory regions updated for context APU
+11:02:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:02:45 INFO  : 'con' command is executed.
+11:02:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:02:45 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:28:10 INFO  : Disconnected from the channel tcfchan#202.
+11:28:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:11 INFO  : 'fpga -state' command is executed.
+11:28:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:11 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:28:11 INFO  : 'jtag frequency' command is executed.
+11:28:11 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:28:11 INFO  : Context for 'APU' is selected.
+11:28:11 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:28:11 INFO  : 'configparams force-mem-access 1' command is executed.
+11:28:11 INFO  : Context for 'APU' is selected.
+11:28:11 INFO  : 'stop' command is executed.
+11:28:11 INFO  : 'ps7_init' command is executed.
+11:28:11 INFO  : 'ps7_post_config' command is executed.
+11:28:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:28:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:12 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:28:12 INFO  : 'configparams force-mem-access 0' command is executed.
+11:28:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:28:12 INFO  : Memory regions updated for context APU
+11:28:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:12 INFO  : 'con' command is executed.
+11:28:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:28:12 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:28:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:19 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:28:23 INFO  : Disconnected from the channel tcfchan#203.
+11:28:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:24 INFO  : 'fpga -state' command is executed.
+11:28:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:24 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:28:24 INFO  : 'jtag frequency' command is executed.
+11:28:24 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:28:24 INFO  : Context for 'APU' is selected.
+11:28:24 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:28:24 INFO  : 'configparams force-mem-access 1' command is executed.
+11:28:24 INFO  : Context for 'APU' is selected.
+11:28:24 INFO  : 'stop' command is executed.
+11:28:25 INFO  : 'ps7_init' command is executed.
+11:28:26 INFO  : 'ps7_post_config' command is executed.
+11:28:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:28:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:28 ERROR : Memory write error at 0x100000. AP transaction timeout
+11:28:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+----------------End of Script----------------
+
+11:28:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:39 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:28:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:42 INFO  : 'fpga -state' command is executed.
+11:28:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:42 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:28:42 INFO  : 'jtag frequency' command is executed.
+11:28:42 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:28:43 INFO  : Context for 'APU' is selected.
+11:28:43 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:28:43 INFO  : 'configparams force-mem-access 1' command is executed.
+11:28:43 INFO  : Context for 'APU' is selected.
+11:28:43 INFO  : 'stop' command is executed.
+11:28:44 INFO  : 'ps7_init' command is executed.
+11:28:44 INFO  : 'ps7_post_config' command is executed.
+11:28:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:28:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:45 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:28:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:28:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:28:45 INFO  : Memory regions updated for context APU
+11:28:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:45 INFO  : 'con' command is executed.
+11:28:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:28:45 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:28:50 INFO  : Disconnected from the channel tcfchan#204.
+11:28:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:28:51 INFO  : 'fpga -state' command is executed.
+11:28:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:28:51 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:28:51 INFO  : 'jtag frequency' command is executed.
+11:28:51 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:28:51 INFO  : Context for 'APU' is selected.
+11:28:51 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:28:51 INFO  : 'configparams force-mem-access 1' command is executed.
+11:28:51 INFO  : Context for 'APU' is selected.
+11:28:51 INFO  : 'stop' command is executed.
+11:28:52 INFO  : 'ps7_init' command is executed.
+11:28:52 INFO  : 'ps7_post_config' command is executed.
+11:28:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:28:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:52 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:28:52 INFO  : 'configparams force-mem-access 0' command is executed.
+11:28:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:28:52 INFO  : Memory regions updated for context APU
+11:28:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:28:52 INFO  : 'con' command is executed.
+11:28:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:28:52 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:30:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:30:56 INFO  : FPGA configured successfully with bitstream "C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:31:00 INFO  : Disconnected from the channel tcfchan#205.
+11:31:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:31:01 INFO  : 'fpga -state' command is executed.
+11:31:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:01 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:31:01 INFO  : 'jtag frequency' command is executed.
+11:31:01 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:31:01 INFO  : Context for 'APU' is selected.
+11:31:01 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:31:01 INFO  : 'configparams force-mem-access 1' command is executed.
+11:31:01 INFO  : Context for 'APU' is selected.
+11:31:02 INFO  : 'stop' command is executed.
+11:31:02 INFO  : 'ps7_init' command is executed.
+11:31:02 INFO  : 'ps7_post_config' command is executed.
+11:31:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:31:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:02 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:31:02 INFO  : 'configparams force-mem-access 0' command is executed.
+11:31:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:31:02 INFO  : Memory regions updated for context APU
+11:31:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:02 INFO  : 'con' command is executed.
+11:31:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:31:02 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:33:50 INFO  : Disconnected from the channel tcfchan#206.
+11:33:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:33:51 INFO  : 'fpga -state' command is executed.
+11:33:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:52 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:33:52 INFO  : 'jtag frequency' command is executed.
+11:33:52 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:33:52 INFO  : Context for 'APU' is selected.
+11:33:52 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:33:52 INFO  : 'configparams force-mem-access 1' command is executed.
+11:33:52 INFO  : Context for 'APU' is selected.
+11:33:52 INFO  : 'stop' command is executed.
+11:33:52 INFO  : 'ps7_init' command is executed.
+11:33:52 INFO  : 'ps7_post_config' command is executed.
+11:33:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:33:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:33:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:33:52 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:33:52 INFO  : 'configparams force-mem-access 0' command is executed.
+11:33:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:33:52 INFO  : Memory regions updated for context APU
+11:33:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:33:52 INFO  : 'con' command is executed.
+11:33:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:33:52 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
+11:49:22 INFO  : Disconnected from the channel tcfchan#207.
+11:49:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A" && level==0} -index 1' command is executed.
+11:49:23 INFO  : 'fpga -state' command is executed.
+11:49:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:23 INFO  : Jtag cable 'Digilent Cora Z7 - 7010 210370AD5263A' is selected.
+11:49:23 INFO  : 'jtag frequency' command is executed.
+11:49:23 INFO  : Sourcing of 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:23 INFO  : Context for 'APU' is selected.
+11:49:23 INFO  : Hardware design information is loaded from 'C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:49:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:49:23 INFO  : Context for 'APU' is selected.
+11:49:23 INFO  : 'stop' command is executed.
+11:49:23 INFO  : 'ps7_init' command is executed.
+11:49:23 INFO  : 'ps7_post_config' command is executed.
+11:49:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:49:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:24 INFO  : The application 'C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:24 INFO  : 'configparams force-mem-access 0' command is executed.
+11:49:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+loadhw -hw C:/Project6_test/Project6_test/Project6_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+dow C:/Project6_test/Project6_test/Project6_test.sdk/vga_test2/Debug/vga_test2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:49:24 INFO  : Memory regions updated for context APU
+11:49:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:24 INFO  : 'con' command is executed.
+11:49:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7010 210370AD5263A"} -index 0
+con
+----------------End of Script----------------
+
+11:49:24 INFO  : Launch script is exported to file 'C:\Project6_test\Project6_test\Project6_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vga_test2.elf_on_local.tcl'
